@@ -1,0 +1,86 @@
+#menu {
+    @media screen and (min-width: 1024px) and (max-width: 1024px) {
+        a.mega-menu-link {
+            padding: 0 20px !important;
+        }
+        ul.mega-sub-menu {
+            width: 100% !important;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        padding: 0;
+    }
+    @media screen and (min-width:1199px) {
+        .mega-sub-menu {
+            background: rgba($color: $primary_light_grey, $alpha: 0.8) !important;
+            //height: 355px !important;
+            .mega-menu_items {
+                ul {
+                    position: absolute !important;
+                    background: none !important;
+                    top: 50% !important;
+                    left: 50% !important;
+                    width: 100% !important;
+                    transform: translate(-40%, 15%) !important;
+                }
+            }
+            .mega-menu-link {
+                color: #363737 !important;
+                font-size: 1.041875em !important;
+                font-weight: 400 !important;
+            }
+            .mega-block-title {
+                padding: 0 !important;
+                font-family: $main_font !important;
+                font-size: 1.041875em !important;
+                font-weight: 400 !important;
+                color: #f7f7f7 !important;
+                margin-bottom: 0 !important;
+                text-transform: uppercase !important;
+                border-bottom: 1px solid #f7f7f7 !important;
+                padding-bottom: 7% !important;
+            }
+            .textwidget {
+                padding-top: 5%;
+            }
+            p {
+                font-family: $main_font !important;
+                font-size: 0.91125em !important;
+                font-weight: 200 !important;
+                color: #f7f7f7 !important;
+                margin-bottom: 0 !important;
+                line-height: 32px;
+            }
+        }
+    }
+    .mega-menu-link {
+        letter-spacing: 1px;
+    }
+}
+
+.description_menu {
+    background: $primary_blue !important;
+    padding: 3% !important;
+    height: 355px !important;
+}
+
+.mega-acces_client {
+    @media screen and (min-width: 992px) {
+        a {
+            border: 1px solid rgb(54, 55, 55) !important;
+            border-radius: 35px !important;
+            line-height: 2.7em !important;
+            height: 2.9em !important;
+            padding: 0 20px !important;
+            transition: .3s;
+            &:hover {
+                border-color: $primary_blue !important;
+                text-decoration: none !important;
+            }
+        }
+    }
+}
+
+.mega-menu-toggle {
+    //background: rgb(62, 68, 78) !important;
+}

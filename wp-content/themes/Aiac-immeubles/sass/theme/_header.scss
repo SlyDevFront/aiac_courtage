@@ -1,0 +1,103 @@
+body {
+    font-family: $main_font;
+}
+
+.entete {
+    background-color: $second_light_grey;
+    height: 45px;
+    line-height: 45px;
+    .baseline {
+        color: #545454;
+        letter-spacing: 1px;
+        font-size: 0.9em;
+    }
+    .link {
+        color: #00457c;
+        letter-spacing: 2px;
+        color: #00457c;
+        a {
+            color: #00457c;
+            font-size: 0.9em;
+            &::after {
+                font-family: 'FontAwesome';
+                content: $fa-var-arrow-circle-right;
+                margin-left: 1%;
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.header {
+    // height: 115px;
+    background-color: #ffffff;
+    @media screen and (min-width: 992px) {
+        #logo {
+            line-height: 125px;
+        }
+    }
+    #searchform {
+        input {
+            border: none;
+            background: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            border-radius: 0;
+            color: #ffffff;
+            visibility: hidden;
+            outline: none !important;
+            transition: .3s;
+            &:focus {
+                // outline: none !important;
+            }
+        }
+    }
+    .input-group-append {
+        margin-left: -5px !important;
+    }
+    #searchsubmit {
+        background: rgb(255, 255, 255);
+        border-radius: 50%;
+        border: 1px solid #343434;
+        width: 3em;
+        height: 3em;
+        transition: .3s;
+        i {
+            color: #5c5c5c;
+        }
+        &:hover {
+            background: rgb(62, 68, 78);
+            border: 1px solid #ffffff;
+            z-index: 999999;
+            i {
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.icon {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        box-sizing: border-box;
+        display: inline;
+        background: #ffffff;
+        padding: 3% 6%;
+        border-radius: 50%;
+        margin-right: 5%;
+        border: 1px solid #343434;
+        transition: .3s;
+        &:hover {
+            background: #343434;
+            a {
+                color: #ffffff;
+            }
+        }
+        a {
+            color: #5c5c5c;
+        }
+    }
+}

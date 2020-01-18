@@ -1,0 +1,92 @@
+.footer {
+    @media screen and (min-width: 992px) {
+        footer {
+            .row {
+                div {
+                    line-height: 145px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+        footer {
+            .row {
+                div {
+                    //line-height: 145px;
+                }
+            }
+        }
+        .copyright {
+            font-size: 1.041875em !important;
+            text-align: center !important;
+        }
+        .icon {
+            li {
+                padding: 3% 7% !important;
+            }
+        }
+    }
+    background-color: #343434;
+    color: #ffffff;
+    footer {
+        height: 145px;
+        .row {
+            height: 100%;
+        }
+        .copyright {
+            font-family: $main_font;
+            font-size: 1.041875em;
+            font-weight: 400;
+            margin: 0;
+        }
+        .icon {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {
+                box-sizing: border-box;
+                display: inline;
+                background: #ffffff;
+                padding: 3% 5%;
+                border-radius: 50%;
+                margin-right: 5%;
+                border: 1px solid #ffffff;
+                transition: .3s;
+                &:hover {
+                    background: #343434;
+                    a {
+                        color: #ffffff;
+                    }
+                }
+                a {
+                    color: #5c5c5c;
+                }
+            }
+        }
+    }
+}
+
+#footer_menu {
+    // height: 40px;
+    line-height: 40px;
+    background: $primary_blue;
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline;
+            margin: 0 3%;
+            a {
+                text-transform: uppercase;
+                color: #ffffff;
+                font-weight: 400;
+                font-size: 0.75em;
+                letter-spacing: 2px;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

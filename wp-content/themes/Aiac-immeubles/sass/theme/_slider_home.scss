@@ -1,0 +1,122 @@
+.slider_home {
+    width: 100%;
+    position: relative;
+    .carousel-caption {
+        width: 100vw;
+        height: 100%;
+        left: 0;
+        bottom: 0 !important;
+        // top: 50%;
+        // left: 50%;
+        // transform: translate(-50%, -50%);
+        //background: rgba($color: #000000, $alpha: 0.5);
+        .carousel-caption-content {
+            position: absolute;
+            text-align: left;
+            top: 35%;
+            left: 10%;
+            h2 {
+                font-family: $main_font;
+                font-size: 3.4em;
+                font-weight: 200;
+            }
+            h5 {
+                font-family: $main_font;
+                font-size: 1.3em;
+                font-weight: 300;
+                letter-spacing: 5px;
+            }
+            button {
+                background-color: $second_light_grey;
+                border: none !important;
+                padding: 1% 5%;
+                border-radius: 35px;
+                margin-top: 5%;
+                transition: 0.3s;
+                &:hover {
+                    filter: brightness(1.2);
+                }
+                a {
+                    color: #363737;
+                    letter-spacing: 3px;
+                    transition: 0.3s;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+    .carousel-indicators {
+        li {
+            position: relative;
+            width: .5em;
+            height: .5em;
+            border-radius: 50%;
+            margin: 1em 1%;
+            background: none;
+            text-indent: 0;
+            color: rgb(255, 255, 255);
+            font-family: inherit;
+            &.active {
+                &::after {
+                    content: url('../img/aiac-courtage-slider-circle.png');
+                    position: absolute;
+                    top: -8px;
+                    left: -16px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .carousel-item {
+            img {
+                height: calc(80vh - 100px);
+                width: auto !important;
+                max-width: unset !important;
+            }
+        }
+        .carousel-caption-content {
+            position: relative !important;
+            text-align: left !important;
+            top: initial !important;
+            left: initial !important;
+            transform: unset !important;
+            padding: 5% !important;
+            margin-top: 20% !important;
+            width: 80% !important;
+            h2 {
+                font-family: $main_font;
+                font-size: 2.34375em !important;
+                margin: 10% 0 !important;
+            }
+            h5 {
+                font-family: $main_font;
+                font-size: 1.041875em !important;
+                font-weight: 300;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
+            button {
+                background-color: rgb(4, 145, 208);
+                border: none !important;
+                padding: 4% 10% !important;
+                border-radius: 35px;
+                margin-top: 5%;
+                transition: 0.3s;
+                &:hover {
+                    filter: brightness(1.2);
+                }
+                a {
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    transition: 0.3s;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
