@@ -95,7 +95,7 @@ include 'inc/slider.php'; ?>
 			<div class="col-12 raison_detre" data-aos="fade-up" data-aos-duration="500">
 				<div class="row">
 					<div class="col-12 col-md-3 my-auto " id="raisondetre_title">
-						<img src="<?php get_template_directory(); ?>/Aiac_1/wp-content/themes/Aiac-immeubles/img/aiac-raisondetre-circle.svg">
+						<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-raisondetre-circle.svg">
 						<span><?php the_field('raison_detre_titre'); ?></span>
 					</div>
 					<div class="col-12 col-md-9" id="raisondetre_texte">
@@ -116,11 +116,11 @@ include 'inc/slider.php'; ?>
 			<div class="col-12 team_list" data-aos="fade-up" data-aos-duration="1750">
 				<div class=" row justify-content-center">
 					<div class="col-12 col-md-3  text-center secteur">
-						<img src="<?php get_template_directory(); ?>/Aiac_1/wp-content/themes/Aiac-immeubles/img/aiac-dirigeants.svg" alt="">
+						<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-dirigeants.svg" alt="">
 						<span class="title">direction</span>
 					</div>
 					<div class="col-12 col-md-3  text-center secteur">
-						<img src="<?php get_template_directory(); ?>/Aiac_1/wp-content/themes/Aiac-immeubles/img/aiac-expert-secteurs.svg" alt="">
+						<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-expert-secteurs.svg" alt="">
 						<span class="title">experts secteur</span>
 					</div>
 					<div class="col-12 text-center">
