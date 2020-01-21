@@ -101,3 +101,28 @@ body {
         }
     }
 }
+
+.header-page {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    .header-overlay {
+        background: rgba($color: $primary_blue, $alpha: 0.8);
+        h1 {
+            font-size: 3.4375em;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 60px;
+            margin: 0;
+            padding: 8% 0;
+            @media screen and (max-width: 768px) {
+                font-size: 1.8em !important;
+                padding: 10% 0 !important;
+            }
+            @media screen and (max-width: 767px) {
+                font-size: 1.8em !important;
+                padding: 20% 0 !important;
+            }
+        }
+    }
+}

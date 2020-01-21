@@ -33,6 +33,17 @@ include 'inc/slider.php'; ?>
 	</div>
 </section>
 <section class="approche container-fluid" data-aos="fade-up" data-aos-duration="1500">
+	<!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<defs>
+			<filter id="id-of-your-filter">
+				<feColorMatrix color-interpolation-filters="RGB" type="matrix" values="00.97     0     0     0     0
+              0     0.72     0     0     0
+              0     0     0.29     0     0
+              0     0     0     1     0 " />
+			</filter>
+			...
+		</defs>
+	</svg> -->
 	<div class="mx-15">
 		<div class="">
 			<div class="col-12 title text-lg-center">
@@ -48,7 +59,6 @@ include 'inc/slider.php'; ?>
 								<div class="garantie_item_container">
 									<div class="pic-container">
 										<img class="picto" src="<?php the_sub_field('pictogramme_specialite'); ?>">
-										<img class="picto_background" src="<?php get_template_directory(); ?>/Aiac_1/wp-content/themes/Aiac-immeubles/img/aiac-circle-specialites.svg">
 									</div>
 									<h4><?php the_sub_field('titre_specialite'); ?></h4>
 									<p><?php the_sub_field('description_specialite'); ?>..</p>

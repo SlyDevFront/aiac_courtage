@@ -14,6 +14,8 @@
 @import "theme/_slider_home";
 @import "theme/_home";
 @import "theme/_footer";
+@import "theme/_qui-sommes-nous";
+@import "theme/_charte";
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -32,4 +34,33 @@
 button {
     letter-spacing: 2px;
     font-weight: 200;
+}
+
+.cover {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+    position: relative;
+    @media screen and (max-width: 992px) {
+        overflow-x: hidden !important;
+    }
+    .border_dark_grey {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $second_dark_grey;
+        height: 100%;
+        width: calc(100% / 16);
+    }
+    .border_grey {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: $primary_dark_grey;
+        height: 100%;
+        width: calc(100% / 16);
+    }
 }

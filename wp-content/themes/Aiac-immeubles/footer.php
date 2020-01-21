@@ -24,11 +24,11 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="row ">
 						<div class="col-12 order-3 order-md-1 col-md-3 my-auto">
 							<p class="copyright">
-								© AIAC Réclamation
+								© AIAC&nbsp;&nbsp;&nbsp;&nbsp; <a id="recla_footer" href="<?php the_permalink(367); ?>">Réclamation</a>
 							</p>
 						</div>
 						<div class="col-6 order-1 order-md-2 col-md-6 my-auto text-md-center">
-							<img src="<?php get_template_directory_uri(); ?>wp-content/themes/Aiac-immeubles/img/aiac-logo-footer.png" alt="">
+							<img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-logo-footer.png" alt="">
 						</div>
 						<div class="col-6 order-2 order-md-3 col-md-3 my-auto text-right icons">
 							<ul class="icon">
