@@ -78,6 +78,11 @@ body {
 }
 
 .icon {
+    @media screen and (min-width: 1200px) and (max-width: 1600px) {
+        li {
+            padding: 5px 12px !important;
+        }
+    }
     list-style: none;
     margin: 0;
     padding: 0;

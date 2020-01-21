@@ -7,9 +7,10 @@
         }
         #contact {
             button {
-                padding: 2% 8% !important;
+                padding: 10px 16px !important;
                 a {
                     font-size: 0.875em !important;
+                    line-height: 30px;
                 }
             }
         }
@@ -137,7 +138,7 @@
             margin: 0 1%;
         }
     }
-    @media screen and (min-width: 768px) and (max-width:1024px) {
+    @media screen and (min-width: 768px) and (max-width:1023px) {
         h3 {
             width: 80% !important;
         }
@@ -156,7 +157,7 @@
             font-size: 2.34375em !important;
             font-weight: 300 !important;
             line-height: 50px !important;
-            width: 70%;
+            //width: 70%;
         }
         h5 {
             font-size: 1.041875em !important;
@@ -281,7 +282,6 @@
             }
             p {
                 margin: 0 !important;
-                font-size: 0.91125em !important;
                 line-height: 30px;
             }
             button {
@@ -303,6 +303,7 @@
     }
     .raison_detre {
         @media screen and (max-width: 767px) {
+            padding-bottom: 5% !important;
             #raisondetre_title {
                 padding-top: 10% !important;
                 img {
@@ -310,8 +311,8 @@
                     margin-left: -15% !important;
                 }
                 span {
-                    right: 105px !important;
-                    top: 88px !important;
+                    right: 30% !important;
+                    top: 46% !important;
                     width: 150px;
                 }
             }
@@ -319,10 +320,15 @@
                 p {
                     font-family: $main_font;
                     text-align: center !important;
-                    font-size: 0.91125em !important;
-                    line-height: 21px;
                     font-weight: 300;
                 }
+            }
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1024px) {
+            span {
+                top: 37% !important;
+                right: 5% !important;
+                width: 60% !important;
             }
         }
         @media screen and (min-width: 768px) and (max-width: 768px) {
@@ -473,6 +479,9 @@
             margin-bottom: 5%;
         }
         .experts {
+            h3 {
+                padding-top: 10% !important;
+            }
             button {
                 padding: 2% 10% !important;
             }
