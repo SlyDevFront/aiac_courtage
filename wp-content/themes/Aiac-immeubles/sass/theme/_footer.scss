@@ -22,7 +22,10 @@
         }
         .icon {
             li {
-                padding: 7px 12px !important;
+                padding: 14px 16px !important;
+                i {
+                    vertical-align: baseline;
+                }
             }
         }
     }
