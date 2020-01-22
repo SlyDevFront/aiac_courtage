@@ -35,6 +35,7 @@ button {
     letter-spacing: 2px !important;
     font-weight: 200 !important;
     display: inline-block;
+    padding: 7px 30px !important;
     a {
         vertical-align: middle;
         line-height: 30px;
@@ -71,9 +72,11 @@ section {
 }
 
 p {
-    line-height: 28px ! important;
-    font-weight: 300 !important;
-    font-size: 1.1em !important;
+    &:not(.baseline):not(.link) {
+        line-height: 28px ! important;
+        font-weight: 300 !important;
+        font-size: 1.1em !important;
+    }
 }
 
 h5 {

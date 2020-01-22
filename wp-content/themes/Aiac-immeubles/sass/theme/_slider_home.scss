@@ -71,7 +71,7 @@
             }
         }
     }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
         .carousel-item {
             img {
                 height: calc(80vh - 100px);
@@ -103,7 +103,7 @@
             button {
                 background-color: rgb(4, 145, 208);
                 border: none !important;
-                padding: 4% 10% !important;
+                //padding: 4% 10% !important;
                 border-radius: 35px;
                 margin-top: 5%;
                 transition: 0.3s;
@@ -112,7 +112,6 @@
                 }
                 a {
                     color: #ffffff;
-                    text-transform: uppercase;
                     letter-spacing: 3px;
                     transition: 0.3s;
                     &:hover {
