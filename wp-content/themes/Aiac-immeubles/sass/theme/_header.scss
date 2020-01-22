@@ -33,6 +33,12 @@ body {
 .header {
     // height: 115px;
     background-color: #ffffff;
+    @media screen and (max-width: 992px) {
+        position: fixed !important;
+        width: 100% !important;
+        height: 105px !important;
+        z-index: 999999 !important;
+    }
     @media screen and (min-width: 992px) {
         #logo {
             line-height: 125px;
@@ -90,19 +96,23 @@ body {
         box-sizing: border-box;
         display: inline;
         background: #ffffff;
-        padding: 3% 6%;
+        padding: 10px 15px;
         border-radius: 50%;
-        margin-right: 5%;
-        border: 1px solid #343434;
+        margin-right: 2%;
+        border: 1px solid #363737;
         transition: .3s;
         &:hover {
-            background: #343434;
+            background: #363737;
             a {
                 color: #ffffff;
             }
         }
         a {
-            color: #5c5c5c;
+            color: #363737;
+            i {
+                font-size: 1.3em !important;
+                vertical-align: middle;
+            }
         }
     }
 }

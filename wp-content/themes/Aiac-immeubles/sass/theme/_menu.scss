@@ -23,7 +23,7 @@
                 position: absolute !important;
                 top: 50% !important;
                 left: 50% !important;
-                transform: translate(-40%, -50%) !important;
+                transform: translate(-40%, -40%) !important;
             }
         }
         .mega-sub-menu {
@@ -36,12 +36,12 @@
                     top: 50% !important;
                     left: 50% !important;
                     width: 100% !important;
-                    transform: translate(-40%, 15%) !important;
+                    transform: translate(-40%, 10%) !important;
                 }
             }
             .mega-menu-link {
                 color: #363737 !important;
-                font-size: 1.041875em !important;
+                font-size: 1.2em !important;
                 font-weight: 400 !important;
             }
             .mega-menu-row {
@@ -62,7 +62,7 @@
             }
             p {
                 font-family: $main_font !important;
-                font-size: 0.91125em !important;
+                font-size: 1.1em !important;
                 font-weight: 200 !important;
                 color: #f7f7f7 !important;
                 margin-bottom: 0 !important;
@@ -77,7 +77,7 @@
 
 #mega-toggle-block-1 {
     &::after {
-        content: url('../img /burger_mobile.svg') !important;
+        content: url('../img/burger_mobile.svg') !important;
     }
 }
 
@@ -94,6 +94,7 @@
 
 .mega-acces_client {
     @media screen and (min-width: 992px) {
+        margin-left: 3em !important;
         a {
             border: 1px solid rgb(54, 55, 55) !important;
             border-radius: 35px !important;
@@ -112,8 +113,10 @@
 .custom-html-widget {
     a {
         color: #ffffff !important;
+        font-size: 1.1em !important;
+        font-weight: 400 !important;
         &:hover {
-            text-decoration: !important;
+            text-decoration: none !important;
         }
         &::after {
             content: '>';

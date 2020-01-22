@@ -200,7 +200,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #3d4c57;
-            margin: 35px 0 20px 0;
+            margin: 30px 0 25px 0;
         }
     }
     .garantie_item_container {
@@ -319,7 +319,7 @@
             #raisondetre_texte {
                 p {
                     font-family: $main_font;
-                    text-align: center !important;
+                    //text-align: center !important;
                     font-weight: 300;
                 }
             }
@@ -407,7 +407,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             color: #ffffff;
-            margin: 25px 0 30px 0;
+            margin: 30px 0 15px 0;
         }
         p {
             font-family: $main_font;
@@ -426,15 +426,16 @@
             &:hover {
                 background: #ffffff;
                 border-color: $primary_blue;
+                a {
+                    text-decoration: none;
+                    color: $primary_blue;
+                }
             }
             a {
                 color: #ffffff;
                 letter-spacing: 3px;
                 transition: 0.3s;
-                &:hover {
-                    text-decoration: none;
-                    color: $primary_blue;
-                }
+                &:hover {}
             }
         }
     }
@@ -522,7 +523,7 @@
         text-transform: uppercase;
         letter-spacing: 5px;
         color: #3d4c57;
-        margin: 25px 0 30px 0;
+        margin: 30px 0 25px 0;
     }
     h6 {
         font-family: $main_font;

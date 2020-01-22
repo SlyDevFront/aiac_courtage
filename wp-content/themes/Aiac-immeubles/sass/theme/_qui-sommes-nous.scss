@@ -84,7 +84,7 @@
             button {
                 background: $primary_blue;
                 border: 1px solid $primary_blue;
-                padding: 10px 30px!important;
+                padding: 10px 30px !important;
                 border-radius: 35px;
                 transition: 0.3s;
                 margin-top: 3%;
@@ -206,7 +206,7 @@
             }
         }
     }
-    
+
     .mieux_vous_connaitre {
         @media screen and (min-width: 768px) and (max-width: 992px) {
             .title {
@@ -302,7 +302,7 @@
             }
         }
     }
-    
+
     .presentation,
     .mieux_vous_connaitre {
         padding: 3% 0;
@@ -381,7 +381,6 @@
                 }
                 a {
                     color: #ffffff;
-                    text-transform: uppercase;
                     letter-spacing: 3px;
                     transition: 0.3s;
                     &:hover {
@@ -391,7 +390,7 @@
             }
         }
     }
-    
+
     .raison_detre_presentation {
         @media screen and (max-width: 767px) {
             #raisondetre_title {
@@ -425,9 +424,9 @@
                     margin-left: -40% !important;
                 }
                 span {
-                    font-size: 0.675em!important;
-                    right: 45px!important;
-                    top: 35px!important;
+                    font-size: 0.675em !important;
+                    right: 45px !important;
+                    top: 35px !important;
                     width: 110px;
                 }
             }
@@ -472,7 +471,7 @@
             }
         }
     }
-    
+
     .chiffres-cle {
         color: #ffffff;
         height: 580px;

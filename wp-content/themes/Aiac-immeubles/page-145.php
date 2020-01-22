@@ -106,7 +106,7 @@ get_header(); ?>
 
 							</div>
 							<div class="col-12 col-md-8">
-								<?php the_sub_field('description'); ?>
+								<p><?php the_sub_field('description'); ?></p>
 							</div>
 						</div>
 					</div>

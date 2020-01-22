@@ -32,8 +32,8 @@
 }
 
 button {
-    letter-spacing: 2px;
-    font-weight: 200;
+    letter-spacing: 2px !important;
+    font-weight: 200 !important;
     display: inline-block;
     a {
         vertical-align: middle;
@@ -68,4 +68,14 @@ section {
         height: 100%;
         width: calc(100% / 16);
     }
+}
+
+p {
+    line-height: 28px ! important;
+    font-weight: 300 !important;
+    font-size: 1.1em !important;
+}
+
+h5 {
+    margin: 25
 }
