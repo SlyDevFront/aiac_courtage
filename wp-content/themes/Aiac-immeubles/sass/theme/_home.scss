@@ -1,6 +1,19 @@
 .contact_courtage {
     // height: 185px;
     background: $primary_light_grey;
+    @media screen and (min-width: 1024px) {
+        #titre {
+            .carousel {
+                display: inline;
+                position: absolute;
+                margin-left: 1.5%;
+                text-transform: lowercase;
+                span {
+                    color: $primary_blue;
+                }
+            }
+        }
+    }
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         #titre {
             padding: 5% 0 !important;
@@ -42,6 +55,15 @@
                 margin-left: 5% !important;
                 margin-top: 5% !important;
                 margin-bottom: 5% !important;
+                .carousel {
+                    span {
+                        margin-left: 1.5%;
+                        text-transform: lowercase;
+                        span {
+                            color: $primary_blue;
+                        }
+                    }
+                }
             }
             p {
                 margin: 5% 0 0 0 !important;

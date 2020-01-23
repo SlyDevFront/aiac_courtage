@@ -22,7 +22,34 @@ include 'inc/slider.php'; ?>
 		<div class="container ">
 			<div class="row">
 				<div class="col-12 col-md-8 col-lg-9" id="titre">
-					<h1><?php the_field('titre_section_contact'); ?></h1>
+					<?php
+					$args = array(
+						'post_type' => 'garanties',
+						'posts_per_page' => 5,
+						'orderby' => 'date',
+						'order' => 'ASC'
+					); ?>
+
+					<h1><?php the_field('titre_section_contact'); ?>
+						<?php
+						$loop_garantie = new WP_Query($args);
+						?>
+						<div class="carousel slide" data-ride="carousel" data-interval="5000">
+							<div class="carousel-inner">
+								<?php
+								if ($loop_garantie->have_posts()) {
+									$i = 0;
+									while ($loop_garantie->have_posts()) {
+										$loop_garantie->the_post(); ?>
+										<span class="carousel-item <?php if ($i == 0) echo 'active'; ?> "><?php the_title(); ?></span>
+								<?php $i++;
+									}
+
+									wp_reset_postdata();
+								} ?>
+							</div>
+						</div>
+					</h1>
 				</div>
 
 				<div class="col-12 col-md-4 col-lg-3 my-auto" id="contact">
