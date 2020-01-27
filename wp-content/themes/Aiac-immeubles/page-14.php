@@ -113,7 +113,7 @@ get_header(); ?>
 	<div class="container raison_detre_presentation" data-aos="fade-up" data-aos-duration="500">
 		<div class="row">
 			<div class="col-12 col-md-3 my-auto " id="raisondetre_title">
-				<img src="<?php get_template_directory(); ?>/wp-content/themes/Aiac-immeubles/img/aiac-circle-.svg">
+				<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-circle-.svg">
 				<span><?php the_field('raison_detre'); ?></span>
 			</div>
 			<div class="col-12 col-md-9" id="raisondetre_texte">

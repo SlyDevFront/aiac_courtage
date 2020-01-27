@@ -156,6 +156,8 @@
         @media screen and (max-width:992px) {
             .mega-menu-link {
                 padding-left: 0 !important;
+                background: none !important;
+                color: $primary_dark_grey !important;
             }
             .mega-sub-menu {
                 .mega-menu-item {
@@ -232,6 +234,11 @@
                     padding: 6px 14px !important;
                     border-radius: 50% !important;
                     font-size: 1.5em !important;
+                }
+            }
+            #mega-menu-item-29 {
+                a {
+                    text-align: center !important;
                 }
             }
             #mega-menu-item-search-4 {

@@ -76,9 +76,9 @@ get_header(); ?>
 <section class="raison-etre container-fluid" data-aos="fade-up" data-aos-duration="1500">
 	<div class="container raison_detre_charte data-aos=" fade-up" data-aos-duration="500">
 		<div class="row">
-			<div class="col-12 col-md-4 my-auto " id="raisondetre_title">
+			<div class="col-12 col-md-4 col-lg-3 my-auto " id="raisondetre_title">
 
-				<img src="<?php get_template_directory(); ?>/wp-content/themes/Aiac-immeubles/img/aiac-raisondetre-circle.svg">
+				<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-raisondetre-circle.svg">
 				<span><?php the_field('raison_detre'); ?></span>
 			</div>
 			<div class="col-12 col-md-8" id="raisondetre_texte">
@@ -93,19 +93,19 @@ get_header(); ?>
 			<?php
 			if (have_rows('element_accroche')) : $count = 1;
 				while (have_rows('element_accroche')) : the_row(); ?>
-					<div class="col-12 col-md-4 accroche_content">
+					<div class="col-12 col-md-6 col-lg-4 accroche_content">
 						<div class="row">
-							<div class="col-12 text-left my-auto " id="accroche_title">
+							<div class="col-12 text-center text-md-left my-auto " id="accroche_title">
 								<h4><?php the_sub_field('intitule_accroche'); ?></h4>
 							</div>
-							<div class="col-3 col-md-4">
+							<div class="col-12 text-center text-md-left col-md-4">
 								<div class="count-container">
 									<img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-circle-specialites.svg" alt="">
 									<p class="count text-center"><?= $count; ?></p>
 								</div>
 
 							</div>
-							<div class="col-12 col-md-8">
+							<div class="col-12 text-center text-md-left col-md-8">
 								<p><?php the_sub_field('description'); ?></p>
 							</div>
 						</div>

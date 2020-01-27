@@ -36,6 +36,7 @@ button {
     font-weight: 200 !important;
     display: inline-block;
     padding: 7px 30px !important;
+    border-radius: 35px !important;
     a {
         vertical-align: middle;
         line-height: 30px;
@@ -50,8 +51,8 @@ button {
 
 section {
     position: relative;
-    @media screen and (min-width: 768px) and (max-width: 992px) {
-        //overflow-x: hidden !important;
+    @media screen and (max-width: 992px) {
+        overflow-x: hidden !important;
     }
     .border_dark_grey {
         position: absolute;
@@ -71,14 +72,76 @@ section {
     }
 }
 
+h1 {
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.125em !important;
+    }
+}
+
 p {
-    &:not(.baseline):not(.link) {
+    &:not(.text) {
+        margin-bottom: 0 !important;
+    }
+    &:not(.baseline):not(.link):not(.definition):not(.number):not(.count) {
         line-height: 28px ! important;
         font-weight: 300 !important;
         font-size: 1.1em !important;
     }
 }
 
+h2 {
+    font-family: $main_font;
+    font-size: 2.8125em;
+    font-weight: 500;
+    color: $primary_blue;
+    margin-bottom: 0 !important;
+    letter-spacing: 2px;
+    @media screen and (max-width: 768px) {
+        font-size: 2em !important;
+        ;
+    }
+}
+
+h3 {
+    font-family: $main_font;
+    font-size: 2.864375em;
+    font-weight: 300;
+    line-height: 43px;
+    color: #3d4c57;
+    margin-bottom: 0 !important;
+    //padding-top: 2% !important;
+    span {
+        color: $primary_blue;
+    }
+}
+
+h4 {
+    font-family: $main_font;
+    font-weight: 200;
+    line-height: 30px;
+    color: #000000;
+    font-size: 1.3em;
+}
+
 h5 {
-    margin: 25
+    font-family: $main_font;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #3d4c57;
+    margin: 30px 0 25px 0;
+    font-size: 1.0625em !important;
+    @media screen and (max-width: 767px) {
+        width: 100% !important;
+        font-size: 1.041875em !important;
+    }
+}
+
+h6 {
+    font-family: $main_font;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #000000;
+    font-size: 1.3125em;
+    margin: 3% 0;
 }
