@@ -54,7 +54,7 @@ get_header(); ?>
 	</div>
 </section>
 <section class="approche_charte approche container-fluid" data-aos="fade-up" data-aos-duration="1500">
-	<div class="mx-15">
+	<div class="container">
 		<div class="row">
 			<div class="col-12 title text-lg-center">
 				<h2><?php the_field('titre_h1_section'); ?></h2>
