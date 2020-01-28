@@ -57,14 +57,38 @@ $container = get_theme_mod('understrap_container_type');
 					<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 				</div>
 				<div class="col-2 text-lg-right my-auto d-none d-lg-block order-md-3" id="search">
-					<?php //get_search_form();
-					?>
+
 					<ul class="icon">
-						<li><a href="#"><i class="fas fa-search"></i></a></li>
-						<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+						<li><a href="#searchBar" class="" data-toggle="search-form"><i class="searchIcon fa fa-search" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 						<li><a href="#"><i class="fas fa-bars"></i></a></li>
 					</ul>
 				</div>
+
+			</div>
+			<div class="col-12" id="searchformdesktop">
+				<?php get_search_form();
+				?>
 			</div>
 		</div>
 	</div>
+	<?php if (is_front_page()) {
+		include 'inc/slider.php';
+	} else { ?>
+		<section class="container-fluid header-page my-auto" style="background: url('<?php the_field('background_titre'); ?>">
+			<div class="header-overlay">
+				<div class="mx-15">
+					<?php
+					if (function_exists('yoast_breadcrumb')) {
+						yoast_breadcrumb('<p class="unite" id="breadcrumbs">', '</p>');
+					}
+					?>
+					<div class="row justify-content-center">
+						<div class="col-12 ">
+							<h1 class="page-title text-center text-lg-left"><?php the_title(); ?></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<?php } ?>

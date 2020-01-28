@@ -93,6 +93,29 @@ body {
     .input-group-append {
         margin-left: -5px !important;
     }
+    #searchformdesktop {
+        display: none;
+        position: absolute;
+        right: 7%;
+        top: 11em;
+        z-index: 9999999;
+        width: 25vw;
+        background: rgb(255, 255, 255);
+    }
+    #searchformDesk {
+        padding: 4% 0;
+        input {
+            border-radius: 0 !important;
+        }
+        #searchHeader {
+            border-radius: 0 !important;
+            background: $primary_blue;
+            border: none !important;
+            i {
+                color: #ffffff;
+            }
+        }
+    }
 }
 
 .icon {
@@ -117,19 +140,25 @@ body {
     li {
         box-sizing: border-box;
         display: inline;
-        background: #ffffff;
-        padding: 10px 17px;
-        border-radius: 50%;
         margin-right: 2%;
-        border: 1px solid #363737;
         transition: .3s;
         &:hover {
-            background: #363737;
+            //@warn background: #363737;
             a {
                 color: #ffffff;
             }
         }
         a {
+            background: #ffffff;
+            padding: 10px 17px;
+            border-radius: 50%;
+            margin-right: 2%;
+            border: 1px solid #363737;
+            transition: .3s;
+            &:hover {
+                background: #363737;
+                color: #ffffff;
+            }
             color: #363737;
             i {
                 font-size: 1.1em;
@@ -145,7 +174,7 @@ body {
     background-size: cover !important;
     .header-overlay {
         background: rgba($color: $primary_blue, $alpha: 0.8);
-        @media screen and (max-width: 1024px) {
+        @media screen and (max-width: 1023px) {
             padding-top: 105px !important;
         }
         h1 {
@@ -154,7 +183,7 @@ body {
             color: #ffffff;
             line-height: 60px;
             margin: 0;
-            padding: 8% 0;
+            padding: 4% 0 8% 0;
             @media screen and (max-width: 768px) {
                 font-size: 1.8em !important;
                 padding: 10% 0 !important;
@@ -164,5 +193,19 @@ body {
                 padding: 20% 0 !important;
             }
         }
+    }
+}
+
+#breadcrumbs {
+    margin-bottom: 0 !important;
+    a {
+        color: #ffffff !important;
+    }
+    * {
+        color: rgb(255, 255, 255) !important;
+        letter-spacing: 4px;
+        line-height: 60px !important;
+        margin: 0;
+        font-size: 0.91125em !important;
     }
 }

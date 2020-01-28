@@ -15,17 +15,6 @@
 defined('ABSPATH') || exit;
 
 get_header(); ?>
-<section class="container-fluid header-page my-auto" style="background: url('<?php the_field('background_titre'); ?>">
-	<div class="header-overlay">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-12 ">
-					<h1 class="page-title text-center text-lg-left"><?php the_title(); ?></h1>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
 <section class="presentation_charte container-fluid" data-aos="fade-up" data-aos-duration="1500">
 	<div class="container">
 		<div class="row">

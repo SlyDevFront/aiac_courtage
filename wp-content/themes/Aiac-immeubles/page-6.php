@@ -15,7 +15,7 @@
 defined('ABSPATH') || exit;
 
 get_header();
-include 'inc/slider.php'; ?>
+?>
 
 <section class="contact_courtage container-fluid">
 	<div class="mx-15">

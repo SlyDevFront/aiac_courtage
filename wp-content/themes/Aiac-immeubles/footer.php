@@ -63,13 +63,14 @@ $container = get_theme_mod('understrap_container_type');
 </section>
 <script>
 	jQuery(document).ready(function() {
-		//alert('op');
-		jQuery('.garantie_item_container ').each(function() {
-			//jQuery(this).hoverdir();
-
-		});
-		jQuery('#searchsubmit').hover(function(e) {
-			jQuery('#searchform input').css('visibility', "visible");
+		var search = jQuery('#searchformdesktop');
+		jQuery('.fa-search').click(function() {
+			search.slideToggle(200);
+			if (search.is(':visible')) {
+				jQuery('.searchIcon ').toggleClass('fa-search fa-close');
+			} else {
+				// jQuery('.searchIcon ').removeClass('fa-close').addClass('fa-search');
+			}
 		});
 		AOS.init();
 	});
