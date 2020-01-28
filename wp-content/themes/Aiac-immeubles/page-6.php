@@ -115,7 +115,7 @@ get_header();
 						<span><?php the_field('raison_detre_titre'); ?></span>
 					</div>
 					<div class="col-12 col-md-9" id="raisondetre_texte">
-						<p><?php the_field('raison_detre_contenu_texte'); ?></p>
+						<p class="raison"><?php the_field('raison_detre_contenu_texte'); ?></p>
 					</div>
 				</div>
 			</div>

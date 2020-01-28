@@ -89,7 +89,7 @@ section {
     height: 300px;
     width: 300px;
     margin: 0 auto;
-    background-image: url('http://localhost/aiac_1/wp-content/themes/Aiac-immeubles/img/aiac-teamlead-circle.svg');
+    background-image: url('http://prepaiac.eanet.fr/wp-content/themes/Aiac-immeubles/img/aiac-teamlead-circle.svg');
     img {
         width: 90%;
         height: 90%;
@@ -113,7 +113,7 @@ section {
     height: 300px;
     width: 300px;
     margin: 0 auto;
-    background-image: url('http://localhost/aiac_1/wp-content/themes/Aiac-immeubles/img/aiac-teamexpert-circle.svg');
+    background-image: url('http://prepaiac.eanet.fr/wp-content/themes/Aiac-immeubles/img/aiac-teamexpert-circle.svg');
     img {
         width: 90%;
         height: 90%;
@@ -142,7 +142,7 @@ p {
     &:not(.text) {
         margin-bottom: 0 !important;
     }
-    &:not(.baseline):not(.link):not(.definition):not(.number):not(.count) {
+    &:not(.baseline):not(.link):not(.definition):not(.number):not(.count):not(.raison) {
         line-height: 28px ! important;
         font-weight: 300 !important;
         font-size: 1.1em !important;
