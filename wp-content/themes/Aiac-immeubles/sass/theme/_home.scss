@@ -49,7 +49,7 @@
         }
         #titre {
             h1 {
-                font-size: 1.041875em;
+                font-size: 1.041875em !important;
                 line-height: 29.17px;
                 width: 90% !important;
                 margin-left: 5% !important;
@@ -137,7 +137,7 @@
             margin: 0 1%;
         }
     }
-    @media screen and (min-width: 768px) and (max-width:1023px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
         h3 {
             width: 80% !important;
         }
@@ -184,7 +184,7 @@
         padding: 4% 0 !important;
     }
     .garantie_item_container {
-        transition: all .3s;
+        transition: all 0.3s;
         margin: 0 3%;
         .pic_container {
             position: relative;
@@ -193,7 +193,7 @@
             margin-bottom: 15%;
         }
         .picto {
-            transition: all .2s;
+            transition: all 0.2s;
             &:hover {
                 //filter:url(#id-of-your-filter);
                 filter: invert(0.4) sepia(1) saturate(5) hue-rotate(8deg);
@@ -218,7 +218,7 @@
         position: absolute;
         width: 100%;
         height: 100%;
-        background: rgba($color: $primary_blue, $alpha: .85);
+        background: rgba($color: $primary_blue, $alpha: 0.85);
     }
     @media screen and (min-width: 768px) and (max-width: 992px) {
         .title {
@@ -415,7 +415,6 @@
             h5 {
                 float: none !important;
                 width: initial !important;
-                ;
             }
         }
         button {
@@ -433,7 +432,6 @@
             h5 {
                 float: none !important;
                 width: initial !important;
-                ;
             }
         }
         button {
@@ -462,7 +460,7 @@
             .secteur {
                 img {
                     margin-bottom: 5% !important;
-                    transition: .3s;
+                    transition: 0.3s;
                     &:hover {
                         transform: scale(1.05);
                     }
@@ -484,7 +482,7 @@
         .secteur {
             img {
                 margin-bottom: 10%;
-                transition: .3s;
+                transition: 0.3s;
                 &:hover {
                     transform: scale(1.05);
                 }
