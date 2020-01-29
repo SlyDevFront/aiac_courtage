@@ -17,6 +17,9 @@
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         #titre {
             padding: 5% 0 !important;
+            h1 {
+                font-size: 1.3em !important;
+            }
         }
         #contact {
             button {
@@ -295,7 +298,7 @@
             }
         }
         @media screen and (min-width: 768px) and (max-width: 768px) {
-            box-shadow: 0 40px 214px -104px #000 !important;
+            //box-shadow: 0 40px 214px -104px #000 !important;
             #raisondetre_title {
                 //padding-top: 10% !important;
                 img {
@@ -406,6 +409,7 @@
 
 .experts {
     @media screen and (min-width: 768px) and (max-width: 992px) {
+        padding: 15% 0 5% 0 !important;
         #intro {
             border: none !important;
             h5 {

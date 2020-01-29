@@ -183,7 +183,7 @@
             }
         }
     }
-
+    
     .mieux_vous_connaitre {
         @media screen and (min-width: 768px) and (max-width: 992px) {
             .title {
@@ -267,7 +267,7 @@
             }
         }
     }
-
+    
     .presentation,
     .mieux_vous_connaitre {
         padding: 3% 0;
@@ -330,7 +330,7 @@
             }
         }
     }
-
+    
     .raison_detre_presentation {
         @media screen and (max-width: 767px) {
             #raisondetre_title {
@@ -356,7 +356,7 @@
             }
         }
         @media screen and (min-width: 768px) and (max-width: 768px) {
-            box-shadow: 0 40px 214px -104px #000 !important;
+            // box-shadow: 0 40px 214px -60px #000 !important;
             #raisondetre_title {
                 //padding-top: 10% !important;
                 img {
@@ -411,7 +411,7 @@
             }
         }
     }
-
+    
     .chiffres-cle {
         color: #ffffff;
         height: 580px;

@@ -50,6 +50,12 @@ button {
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 992px) {
+    .qui_sommes_nous {
+        overflow: visible !important;
+    }
+}
+
 section {
     position: relative;
     @media screen and (max-width: 992px) {
@@ -142,7 +148,7 @@ p {
     &:not(.text) {
         margin-bottom: 0 !important;
     }
-    &:not(.baseline):not(.link):not(.definition):not(.number):not(.count):not(.raison) {
+    &:not(.baseline):not(.link):not(.definition):not(.number):not(.count):not(.raison):not(.copyright) {
         line-height: 28px ! important;
         font-weight: 300 !important;
         font-size: 1.1em !important;
