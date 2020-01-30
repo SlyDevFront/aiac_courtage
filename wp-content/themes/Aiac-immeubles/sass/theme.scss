@@ -148,10 +148,11 @@ p {
     &:not(.text) {
         margin-bottom: 0 !important;
     }
-    &:not(.baseline):not(.link):not(.definition):not(.number):not(.count):not(.raison):not(.copyright) {
+    &:not(.baseline):not(.unite):not(.datacontainer):not(.link):not(.definition):not(.number):not(.count):not(.raison):not(.copyright) {
         line-height: 28px ! important;
         font-weight: 300 !important;
         font-size: 1.1em !important;
+        color: #212529;
     }
 }
 

@@ -196,12 +196,12 @@
             transition: all 0.2s;
             &:hover {
                 //filter:url(#id-of-your-filter);
-                filter: invert(0.4) sepia(1) saturate(5) hue-rotate(8deg);
+                //filter: invert(0.4) sepia(1) saturate(5) hue-rotate(8deg);
             }
         }
         &:hover {
             h4 {
-                color: #f7b74a;
+                //color: #f7b74a;
             }
             //filter: invert(100%) url(#id-of-your-filter);
         }

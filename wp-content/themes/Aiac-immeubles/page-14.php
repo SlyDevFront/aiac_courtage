@@ -37,13 +37,13 @@ get_header(); ?>
 	</div>
 </section>
 <section class="approche_charte approche container-fluid" data-aos="fade-up" data-aos-duration="1500">
-	<div class="container">
+	<div class="mx-15">
 		<div class="row">
 			<div class="col-12 title text-lg-center">
 				<h2><?php the_field('titre_h1_section'); ?></h2>
 				<h5><?php the_field('titre_h5_section'); ?></h5>
 			</div>
-			<div class="col-12 col-md-2 col-lg-2 text-center big_pres" data-aos="fade-right" data-aos-duration="1000">
+			<div class="col-12 col-md-2 col-lg-2 my-auto text-center big_pres" data-aos="fade-right" data-aos-duration="1000">
 				<?php $img = get_field('visuel_bloc_gauche'); ?>
 				<img src="<?php echo $img['url']; ?>" alt="<?php echo $img['description']; ?>">
 			</div>
@@ -65,85 +65,6 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
-
-	</div>
-</section>
-<section class="mieux_vous_connaitre container-fluid">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 col-md-5 col-lg-6 text-left" id="pic" data-aos="fade-left" data-aos-duration="1500">
-				<?php $pic = get_field('visuel__immeuble');
-				//var_dump($pic);
-				?>
-				<img src="<?php echo $pic; ?>">
-			</div>
-			<div class="border_dark_grey d-none d-lg-block"></div>
-			<div class="col-12 col-md-7 col-lg-6 title text-left connaitre_content" data-aos="fade-right" data-aos-duration="1500">
-				<h2><?php the_field('titre_h3'); ?></h2>
-				<h5><?php the_field('titre_h5_immeuble'); ?></h5>
-				<div style="clear:both;"></div>
-				<p class="text">
-					<?php the_field('texte_de_presentation_immeubles'); ?>
-				</p>
-				<button><a href="<?php the_field('lien_bouton') ?>"><?php the_field('titre_bouton') ?></a></button>
-			</div>
-		</div>
-	</div>
-	<div class="border_dark_grey d-none d-lg-block"></div>
-</section>
-
-<section class="raison-etre container-fluid" data-aos="fade-up" data-aos-duration="1500">
-	<div class="container raison_detre_presentation" data-aos="fade-up" data-aos-duration="500">
-		<div class="row">
-			<div class="col-12 col-md-3 my-auto " id="raisondetre_title">
-				<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-circle-.svg">
-				<span><?php the_field('raison_detre'); ?></span>
-			</div>
-			<div class="col-12 col-md-9" id="raisondetre_texte">
-				<p><?php the_field('raison_detre_contenu_texte'); ?></p>
-			</div>
-		</div>
-	</div>
-	<div class="border_grey d-none d-lg-block"></div>
-</section>
-<section class="approche container-fluid" data-aos="fade-up" data-aos-duration="1500">
-	<div class="mx-15">
-		<div class="">
-			<div class="col-12 title text-lg-center">
-				<h3><?php the_field('titre_h1_section'); ?></h3>
-				<h5><?php the_field('titre_h5_section'); ?></h5>
-			</div>
-			<div class="col-12 col-md-12 col-lg-12 garanties" data-aos="fade-up" data-aos-duration="2250">
-				<div class="row justify-content-center">
-					<?php
-					if (have_rows('etapes')) :
-
-						$k = 1;
-						while (have_rows('etapes')) : the_row(); ?>
-							<div class="col-12 col-md-3 col-lg-2 text-left garantie_item">
-								<div class="garantie_item_container">
-									<div class="etape-container mx-auto">
-										<div class="data-container">
-											<span class="numbers counter"><?php echo $k; ?></span>
-											<small><?php $after = ($k == 1) ? 'ère' : 'ème';
-													echo $after; ?></small>
-											<p> étape</p>
-										</div>
-									</div>
-									<p class="text-center"><?php the_sub_field('nom_etape'); ?></p>
-								</div>
-							</div>
-					<?php $k = $k + 1;
-						endwhile;
-					endif; ?>
-					<div class="col-12 title text-center">
-						<button><a href="<?php the_field('lien_bouton_team') ?>"><?php the_field('titre_bouton_team') ?></a></button>
-
-					</div>
-				</div>
-			</div>
-		</div>
-
 	</div>
 </section>
 <section class="chiffres-cle container-fluid" data-aos="fade-up" data-aos-duration="2000">
@@ -189,10 +110,87 @@ get_header(); ?>
 				</div>
 			</div>
 		</div>
+	</div>
+</section>
+<section class="mieux_vous_connaitre container-fluid">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-5 col-lg-6 text-left" id="pic" data-aos="fade-left" data-aos-duration="1500">
+				<?php $pic = get_field('visuel__immeuble');
+				//var_dump($pic);
+				?>
+				<img src="<?php echo $pic; ?>">
+			</div>
+			<div class="border_dark_grey d-none d-lg-block"></div>
+			<div class="col-12 col-md-7 col-lg-6 title text-left connaitre_content" data-aos="fade-right" data-aos-duration="1500">
+				<h2><?php the_field('titre_h3'); ?></h2>
+				<h5><?php the_field('titre_h5_immeuble'); ?></h5>
+				<div style="clear:both;"></div>
+				<p class="text">
+					<?php the_field('texte_de_presentation_immeubles'); ?>
+				</p>
+				<button><a href="<?php the_field('lien_bouton') ?>"><?php the_field('titre_bouton') ?></a></button>
+			</div>
+		</div>
+	</div>
+	<div class="border_dark_grey d-none d-lg-block"></div>
+</section>
+
+<section class="raison-etre container-fluid" data-aos="fade-up" data-aos-duration="1500">
+	<div class="container raison_detre_presentation" data-aos="fade-up" data-aos-duration="500">
+		<div class="row">
+			<div class="col-12 col-md-3 my-auto " id="raisondetre_title">
+				<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-circle-.svg">
+				<span><?php the_field('raison_detre'); ?></span>
+			</div>
+			<div class="col-12 col-md-9" id="raisondetre_texte">
+				<p class="raison"><?php the_field('raison_detre_contenu_texte'); ?></p>
+			</div>
+		</div>
+	</div>
+	<div class="border_grey d-none d-lg-block"></div>
+</section>
+<section class="approche container-fluid" data-aos="fade-up" data-aos-duration="1500">
+	<div class="mx-15">
+		<div class="">
+			<div class="col-12 title text-lg-center">
+				<h3><?php the_field('titre_h3_servir'); ?></h3>
+				<p><?php the_field('texte_secondaire'); ?></p>
+			</div>
+			<div class="col-12 col-md-12 col-lg-12 garanties" data-aos="fade-up" data-aos-duration="2250">
+				<div class="row justify-content-center">
+					<?php
+					if (have_rows('etapes')) :
+
+						$k = 1;
+						while (have_rows('etapes')) : the_row(); ?>
+							<div class="col-12 col-md-2 col-lg-2 text-left garantie_item">
+								<div class="garantie_item_container">
+									<div class="etape-container mx-auto">
+										<div class="data-container">
+											<span class="numbers counter"><?php echo $k; ?></span>
+											<small><?php $after = ($k == 1) ? 'ère' : 'ème';
+													echo $after; ?></small>
+											<p class="datacontainer"> étape</p>
+										</div>
+									</div>
+									<p class="datacontainer text-center"><?php the_sub_field('nom_etape'); ?></p>
+								</div>
+							</div>
+					<?php $k = $k + 1;
+						endwhile;
+					endif; ?>
+					<div class="col-12 title text-center">
+						<button><a href="<?php the_field('lien_bouton_team') ?>"><?php the_field('titre_bouton_team') ?></a></button>
+
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</div>
-
 </section>
+
 <!--<script>
 	jQuery(document).ready(function() {
 		jQuery('.counter').counterUp({
