@@ -122,14 +122,17 @@
             margin-bottom: 0;
             margin: 5% 0;
             li {
-                font-size: 1.0625em;
-                font-weight: 200;
-                color: $primary_blue;
-                text-transform: capitalize;
+                line-height: 28px ! important;
+                font-weight: 300 !important;
+                font-size: 1.1em !important;
+                color: #212529;
                 &::before {
                     content: url('../img/aiac-courtage-5c-liste-after.svg');
                     vertical-align: sub;
                     margin-right: 3%;
+                }
+                a {
+                    color: $primary_blue !important;
                 }
             }
         }
@@ -235,6 +238,12 @@
         }
     }
     .count-container {
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            img {
+                width: 50% !important;
+                margin: 5% 0 !important;
+            }
+        }
         @media screen and (max-width: 767px) {
             margin: 5% 0 !important;
             img {
@@ -250,15 +259,15 @@
     .count {
         font-size: 2.3975em;
         line-height: 19.73px;
-        color: #b8b8b8;
+        color: #000000;
         margin-bottom: 0;
         position: absolute;
         width: 75%;
         top: 1.1em;
         @media screen and (min-width: 768px) and (max-width: 992px) {
             font-size: 2em;
-            width: 75% !important;
-            top: 1em !important;
+            width: 45%;
+            top: 1.5em !important;
         }
         @media screen and (max-width: 767px) {
             font-size: 2em !important;

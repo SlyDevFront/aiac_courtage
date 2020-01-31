@@ -23,11 +23,11 @@ get_header(); ?>
 				<h5><?php the_field('titre_h5_copie'); ?></h5>
 
 			</div>
-			<div class="col-12 col-md-6 desc">
+			<div class="col-12 col-md-6 desc" data-aos="fade-right" data-aos-duration="1000">
 				<?php the_field('texte_de_presentation_gauche'); ?>
 
 			</div>
-			<div class="col-12 col-md-6 desc">
+			<div class="col-12 col-md-6 desc" data-aos="fade-left" data-aos-duration="1200">
 				<?php the_field('texte_de_presentation_droite'); ?>
 			</div>
 			<div class="col-12 text-center title">
@@ -82,19 +82,19 @@ get_header(); ?>
 			<?php
 			if (have_rows('element_accroche')) : $count = 1;
 				while (have_rows('element_accroche')) : the_row(); ?>
-					<div class="col-12 col-md-6 col-lg-4 accroche_content">
+					<div class="col-12 col-md-4 col-lg-4 accroche_content">
 						<div class="row">
 							<div class="col-12 text-center text-md-left my-auto " id="accroche_title">
 								<h4><?php the_sub_field('intitule_accroche'); ?></h4>
 							</div>
-							<div class="col-12 text-center text-md-left col-md-3">
+							<div class="col-12 text-center text-md-left col-md-12">
 								<div class="count-container">
 									<img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-circle-specialites.svg" alt="">
 									<p class="count text-center"><?= $count; ?></p>
 								</div>
 
 							</div>
-							<div class="col-12 text-center text-md-left col-md-8">
+							<div class="col-12 text-center text-md-left col-md-12">
 								<p><?php the_sub_field('description'); ?></p>
 							</div>
 						</div>
