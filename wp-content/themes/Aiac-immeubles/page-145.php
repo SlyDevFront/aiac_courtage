@@ -87,14 +87,14 @@ get_header(); ?>
 							<div class="col-12 text-center text-md-left my-auto " id="accroche_title">
 								<h4><?php the_sub_field('intitule_accroche'); ?></h4>
 							</div>
-							<div class="col-12 text-center text-md-left col-md-12">
+							<div class="col-12 text-center text-md-left col-md-12 col-lg-3">
 								<div class="count-container">
 									<img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-circle-specialites.svg" alt="">
 									<p class="count text-center"><?= $count; ?></p>
 								</div>
 
 							</div>
-							<div class="col-12 text-center text-md-left col-md-12">
+							<div class="col-12 text-center text-md-left col-md-12 col-lg-9">
 								<p><?php the_sub_field('description'); ?></p>
 							</div>
 						</div>
