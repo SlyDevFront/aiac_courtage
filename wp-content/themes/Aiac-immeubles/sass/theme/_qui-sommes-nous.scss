@@ -70,17 +70,18 @@
                 transition: 0.3s;
                 margin-top: 3%;
                 &:hover {
-                    background: #ffffff;
+                    filter: brightness(1.2);
+                    //background: #ffffff;
                     border-color: $primary_blue;
+                    a {
+                        text-decoration: none;
+                        //color: $primary_blue;
+                    }
                 }
                 a {
                     color: #ffffff;
                     letter-spacing: 3px;
                     transition: 0.3s;
-                    &:hover {
-                        text-decoration: none;
-                        color: $primary_blue;
-                    }
                 }
             }
             @media screen and (max-width: 767px) {
@@ -187,7 +188,7 @@
             }
         }
     }
-
+    
     .mieux_vous_connaitre {
         @media screen and (min-width: 768px) and (max-width: 992px) {
             .title {
@@ -256,22 +257,23 @@
                 border-radius: 35px;
                 transition: 0.3s;
                 &:hover {
-                    background: #dadada;
+                    //background: red !important;
                     border-color: $primary_blue;
+                    a {
+                        text-decoration: none;
+                        //color: $primary_blue;
+                    }
                 }
                 a {
                     color: #dadada;
                     letter-spacing: 3px;
                     transition: 0.3s;
-                    &:hover {
-                        text-decoration: none;
-                        color: $primary_blue;
-                    }
+                    &:hover {}
                 }
             }
         }
     }
-
+    
     .presentation,
     .mieux_vous_connaitre {
         padding: 3% 0;
@@ -334,7 +336,7 @@
             }
         }
     }
-
+    
     .raison_detre_presentation {
         @media screen and (max-width: 767px) {
             #raisondetre_title {
@@ -415,7 +417,7 @@
             }
         }
     }
-
+    
     .chiffres-cle {
         color: #ffffff;
         height: 580px;

@@ -69,19 +69,28 @@ get_header();
 			<div class="col-12 col-md-12 col-lg-12 garanties" data-aos="fade-up" data-aos-duration="2250">
 				<div class="row justify-content-center">
 					<?php
-					if (have_rows('specialites')) :
-						while (have_rows('specialites')) : the_row(); ?>
+					$args = array(
+						'post_type' => 'garanties',
+						'posts_per_page' => 5,
+						'orderby' => 'date',
+						'order' => 'ASC'
+					);
+					$loop_specialites = new WP_Query($args);
+					if ($loop_specialites->have_posts()) {
+						while ($loop_specialites->have_posts()) {
+							$loop_specialites->the_post(); ?>
 							<div class="col-12 col-md-6 col-lg-2 text-center garantie_item">
 								<div class="garantie_item_container">
 									<div class="pic-container">
-										<img class="picto" src="<?php the_sub_field('pictogramme_specialite'); ?>">
+										<?= the_post_thumbnail($post->ID); ?>
 									</div>
-									<h4><?php the_sub_field('titre_specialite'); ?></h4>
-									<p><?php the_sub_field('description_specialite'); ?>..</p>
+									<h4><?= the_title(); ?></h4>
+									<p><?= the_field('description'); ?></p>
 								</div>
 							</div>
-					<?php endwhile;
-					endif; ?>
+					<?php wp_reset_postdata();
+						}
+					} ?>
 
 				</div>
 			</div>
