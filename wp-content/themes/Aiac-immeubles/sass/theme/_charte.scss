@@ -1,3 +1,9 @@
+.page-id-145 {
+    h4 {
+        font-weight: 400 !important;
+    }
+}
+
 .presentation_charte {
     padding: 3% 0;
     @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -212,8 +218,8 @@
     p {
         font-size: 1.301875em;
         color: $primary_blue;
-        line-height: 29px;
-        font-weight: 200;
+        line-height: 30px;
+        font-weight: 300;
         margin: 0;
         padding: 10% 10%;
         letter-spacing: 2px;

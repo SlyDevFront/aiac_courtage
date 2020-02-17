@@ -17,6 +17,16 @@
 @import "theme/_qui-sommes-nous";
 @import "theme/_charte";
 @import "theme/_team";
+@import "theme/_listing-offre";
+@import "theme/_domain";
+html {
+    scroll-behavior: smooth !important;
+}
+
+ul:not(.mega-menu) {
+    list-style-image: url('../img/aiac-courtage-5c-liste-after.svg');
+}
+
 .container-fluid {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -211,4 +221,8 @@ h6 {
     color: #000000;
     font-size: 1.3125em;
     margin: 3% 0;
+}
+
+.Sport {
+    background-color: #e64a47;
 }

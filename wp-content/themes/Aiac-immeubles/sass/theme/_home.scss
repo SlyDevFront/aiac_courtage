@@ -1,4 +1,9 @@
 .contact_courtage {
+    .carousel {
+        span {
+            color: $primary_blue;
+        }
+    }
     // height: 185px;
     background: $primary_light_grey;
     @media screen and (min-width: 1024px) {
@@ -282,6 +287,11 @@
                     font-family: $main_font;
                     //text-align: center !important;
                     font-weight: 300;
+                    font-family: Niramit, sans-serif;
+                    text-align: left !important;
+                    font-size: 1.301875em !important;
+                    line-height: 30px;
+                    font-weight: 300;
                 }
             }
         }
@@ -339,7 +349,7 @@
             font-size: 1.301875em !important;
             color: $primary_blue;
             line-height: 29px;
-            font-weight: 200;
+            font-weight: 300;
             margin: 0;
             padding: 8% 0;
         }

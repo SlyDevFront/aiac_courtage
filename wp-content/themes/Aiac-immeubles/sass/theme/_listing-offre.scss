@@ -1,0 +1,24 @@
+	.domaines_courtage {
+	    padding-bottom: 4%;
+	    h5 {
+	        letter-spacing: 3px !important;
+	    }
+	    .garantie_item_container {
+	        transition: all 0.3s;
+	        margin: 0 3%;
+	        .pic_container {
+	            position: relative;
+	        }
+	        img {
+	            transition: all 0.3s;
+	            margin-bottom: 5%;
+	            filter: brightness(0);
+	        }
+	        &:hover {
+	            img {
+	                filter: none;
+	            }
+	        }
+	        transition: all 0.2s;
+	    }
+	}

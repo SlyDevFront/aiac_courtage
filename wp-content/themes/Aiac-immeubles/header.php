@@ -39,7 +39,8 @@ $container = get_theme_mod('understrap_container_type');
 				</div>
 				<div class="col-12 col-sm-4 text-right">
 					<p class="link">
-						<a href="http://prepaiacim.eanet.fr/" target="_blank" rel="noopener noreferrer">Immeubles / Syndic</a>
+						<a href="http://prepaiacim.eanet.fr/" target="_blank" rel="noopener noreferrer">Immeubles /
+							Syndic</a>
 					</p>
 				</div>
 			</div>
@@ -74,7 +75,31 @@ $container = get_theme_mod('understrap_container_type');
 	</div>
 	<?php if (is_front_page()) {
 		include 'inc/slider.php';
-	} else { ?>
+	} elseif (is_page_template('page-templates/domain-page.php')) { ?>
+		<section class="container-fluid header-page header-page-domain my-auto">
+			<div class="header-overlay">
+				<div class="mx-15">
+					<?php
+					if (function_exists('yoast_breadcrumb')) {
+						yoast_breadcrumb('<p class="unite" id="breadcrumbs">', '</p>');
+					}
+					?>
+					<div class="row justify-content-center">
+						<div class="col-12 col-lg-4">
+							<div id="title_container">
+								<img src="<?php the_field('icone_titre'); ?>" alt="">
+								<h1 class="page-title text-center text-lg-left"><?php the_title(); ?></h1>
+								<h5><?php the_field('baseline_titre'); ?></h5>
+							</div>
+						</div>
+						<div class="col-12 col-lg-8" style="background: url('<?php the_field('background_header'); ?>">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	<?php } else { ?>
 		<section class="container-fluid header-page my-auto" style="background: url('<?php the_field('background_titre'); ?>">
 			<div class="header-overlay">
 				<div class="mx-15">

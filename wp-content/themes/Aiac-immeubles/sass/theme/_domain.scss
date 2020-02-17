@@ -1,0 +1,162 @@
+.page-template-domain-page {
+    .header-page-domain {
+        h1 {
+            padding: 0;
+        }
+        h5 {
+            color: #ffffff !important;
+            margin: 0 !important;
+        }
+    }
+    .anchors_container {
+        background-color: #ffffff;
+        .anchors {
+            list-style: none;
+            padding: 0 !important;
+            margin: 0 !important;
+            display: inline;
+            li {
+                display: inline;
+                margin-left: 12.5em;
+                .anchor_icon {
+                    margin-right: 1%;
+                    vertical-align: middle;
+                    a {
+                        &:hover {
+                            text-decoration: none !important;
+                        }
+                    }
+                }
+            }
+        }
+        .anchor {
+            font-family: $main_font;
+            font-weight: 300;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #3d4c57;
+            margin: 30px 0 25px 0;
+            font-size: 1.0625em !important;
+            line-height: 25px;
+            @media screen and (max-width: 767px) {
+                width: 100% !important;
+                font-size: 1.041875em !important;
+            }
+        }
+    }
+    .main_content {
+        background-color: #dcdcdc;
+        padding: 3% 0;
+        @media screen and (max-width: 768px) {
+            #pic {
+                //margin-bottom: 10% !important;
+                padding: 0 15px 0 15px !important;
+                img {
+                    width: 60% !important;
+                    box-shadow: none !important;
+                    margin: 5% !important;
+                }
+            }
+            .title {
+                button {
+                    float: none !important;
+                    width: 70%;
+                    margin-left: 15% !important;
+                    margin-top: 7%;
+                    padding: 2% 5% !important;
+                }
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            #pic {
+                img {
+                    width: 80% !important;
+                }
+            }
+            .title {
+                p {
+                    margin: 4% 0 5% 0 !important;
+                }
+            }
+        }
+        #pic {
+            padding: 0;
+            img {}
+        }
+        .title {
+            ul {
+                list-style-image: url('../img/aiac-courtage-5c-liste-after.svg');
+                padding-left: 0 !important;
+                list-style-position: inside;
+                margin-bottom: 0 !important;
+                margin: 5% 0;
+                li {
+                    font-size: 1.04em;
+                    margin: 0.5em 0;
+                    font-weight: 200;
+                    color: #000000;
+                    a {
+                        color: $primary_blue !important;
+                    }
+                }
+            }
+        }
+    }
+    .descriptif_content {
+        h3 {
+            font-size: 2.604375em;
+            line-height: 30px !important;
+        }
+        p {
+            margin: 40px 0 !important;
+        }
+        ul {
+            padding-left: 0 !important;
+            list-style-position: inside;
+        }
+        li {
+            font-size: 1.04em;
+            margin: 0.5em 0;
+            font-weight: 200;
+            color: #000000;
+        }
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            .title {
+                p {
+                    margin: 4% 0 5% 0 !important;
+                }
+            }
+        }
+        @media screen and (max-width: 767px) {}
+        .title {
+            h3 {
+                //line-height: 60px !important;
+            }
+        }
+    }
+    .prefooter-infos {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        p {
+            text-transform: uppercase;
+            color: #ffffff !important;
+            letter-spacing: 3px !important;
+            font-weight: bold;
+        }
+        #download {
+            img {
+                float: left;
+                margin-right: 10%;
+            }
+        }
+        #contact_domain {
+            img {
+                float: right;
+                margin-left: 10%;
+            }
+        }
+    }
+}

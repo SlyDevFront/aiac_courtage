@@ -29,7 +29,7 @@ get_header(); ?>
 				<h2><?php the_field('titre_h2_page'); ?></h2>
 				<h5><?php the_field('titre_h5'); ?></h5>
 				<div style="clear:both;"></div>
-				<p class="text">
+				<p class="">
 					<?php the_field('texte_de_presentation'); ?>
 				</p>
 			</div>
@@ -63,7 +63,7 @@ get_header(); ?>
 							<div class="col-12 col-md-2 col-lg-2 text-center garantie_item">
 								<div class="garantie_item_container">
 									<div class="pic-container">
-										<?= the_post_thumbnail($post->ID); ?>
+										<a href="<?php echo the_permalink(); ?>"><?= the_post_thumbnail($post->ID); ?></a>
 									</div>
 									<h4><?= the_title(); ?></h4>
 								</div>
@@ -136,7 +136,7 @@ get_header(); ?>
 				<h2><?php the_field('titre_h3'); ?></h2>
 				<h5><?php the_field('titre_h5_immeuble'); ?></h5>
 				<div style="clear:both;"></div>
-				<p class="text">
+				<p class="">
 					<?php the_field('texte_de_presentation_immeubles'); ?>
 				</p>
 				<button><a href="<?php the_field('lien_bouton') ?>"><?php the_field('titre_bouton') ?></a></button>
