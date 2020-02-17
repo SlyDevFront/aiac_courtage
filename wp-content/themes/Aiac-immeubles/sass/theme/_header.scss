@@ -129,11 +129,6 @@ body {
             }
         }
     }
-    @media screen and (min-width: 1200px) and (max-width: 1600px) {
-        li {
-            padding: 5px 12px !important;
-        }
-    }
     list-style: none;
     margin: 0;
     padding: 0;
@@ -148,6 +143,9 @@ body {
                 color: #ffffff;
             }
         }
+        #burger_menu {
+            padding: 6px 10px !important;
+        }
         a {
             background: #ffffff;
             padding: 6px 13px;
@@ -160,6 +158,9 @@ body {
                 color: #ffffff;
             }
             color: #363737;
+            img {
+                height: 13px;
+            }
             i {
                 font-size: 1.1em;
                 vertical-align: middle;

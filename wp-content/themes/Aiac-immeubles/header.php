@@ -49,12 +49,12 @@ $container = get_theme_mod('understrap_container_type');
 	<div class="container-fluid header">
 		<div class="mx-15">
 			<div class="row" id="header_menu">
-				<div class="col-6 col-lg-2 col-xl-3 my-auto text-md-right text-lg-left order-2 order-lg-1" id="logo">
+				<div class="col-6 col-lg-2 my-auto text-md-right text-lg-left order-2 order-lg-1" id="logo">
 					<?php if (has_custom_logo()) {
 						the_custom_logo();
 					} ?>
 				</div>
-				<div class="col-6 col-lg-8 col-xl-7 order-1 order-lg-2" id="menu">
+				<div class="col-6 col-lg-8 text-center order-1 order-lg-2" id="menu">
 					<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 				</div>
 				<div class="col-2 text-lg-right my-auto d-none d-lg-block order-md-3" id="search">
@@ -62,7 +62,10 @@ $container = get_theme_mod('understrap_container_type');
 					<ul class="icon">
 						<li><a href="#searchBar" class="" data-toggle="search-form"><i class="searchIcon fa fa-search" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a href="#"><i class="fas fa-bars"></i></a></li>
+						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/menu-burger.svg" alt="">
+							</a></li>
+
+
 					</ul>
 				</div>
 
