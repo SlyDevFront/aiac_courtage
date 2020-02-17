@@ -39,7 +39,7 @@ $container = get_theme_mod('understrap_container_type');
 				</div>
 				<div class="col-12 col-sm-4 text-right">
 					<p class="link">
-						<a href="http://prepaiacim.eanet.fr/" target="_blank" rel="noopener noreferrer">Immeubles /
+						<a href="http://prepaiacim.eanet.fr/" target="_blank" rel="noopener noreferrer">Immeuble /
 							Syndic</a>
 					</p>
 				</div>
