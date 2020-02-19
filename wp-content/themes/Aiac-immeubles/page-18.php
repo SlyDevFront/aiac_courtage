@@ -58,8 +58,8 @@ get_header(); ?>
 									<li><a href="<?php the_sub_field('telephone'); ?>"><i class="fas fa-phone-alt"></i></a></li>
 									<li><a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a></li>
 
+								</ul>
 							</div>
-							</ul>
 
 						</div>
 				<?php $i++;
@@ -115,20 +115,22 @@ get_header(); ?>
 									<li><a href="mailto:<?php the_sub_field('email'); ?>"><i class="fas fa-envelope"></i></a></li>
 									<li><a href="<?php the_sub_field('telephone'); ?>"><i class="fas fa-phone-alt"></i></a></li>
 									<li><a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+								</ul>
 							</div>
-							</ul>
+
 						</div>
-				<?php $i++;
+			</div>
+	<?php $i++;
 					}
 					wp_reset_postdata();
 				} ?>
-			</div>
 		</div>
-		<div class="border_grey d-none d-lg-block text-center" data-aos="fade-right" data-aos-duration="2500">
-			<div class="title_container">
-				<h2><?php echo get_cat_name($category_id = 4); ?></h2>
-			</div>
+	</div>
+	<div class="border_grey d-none d-lg-block text-center" data-aos="fade-right" data-aos-duration="2500">
+		<div class="title_container">
+			<h2><?php echo get_cat_name($category_id = 4); ?></h2>
 		</div>
+	</div>
 </section>
 
 <?php get_footer();

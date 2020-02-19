@@ -110,16 +110,17 @@ get_header(); ?>
 							$after = ($k == 1 || $k == 6) ? '12' : '6'; ?>
 							<div class="number-itemb col-12 col-md-<?= $after; ?> col-lg-<?= $after; ?> col-xl-<?= $after; ?> text-center">
 								<p class="definition"><?php echo the_sub_field('definition'); ?></p>
-								<p class="number counter"><?php echo the_sub_field('chiffres'); ?></p>
-								<?php if (get_sub_field('unite_chiffre')) { ?>
-									<div class="unite_container">
-										<span class="unite_chiffre"><?php echo the_sub_field('unite_chiffre'); ?></span>
+								<p class="number counter"><?php echo the_sub_field('chiffres'); ?>
+									<?php if (get_sub_field('unite_chiffre')) { ?>
+										<div class="unite_container">
+											<span class="unite_chiffre"><?php echo the_sub_field('unite_chiffre'); ?></span>
 
-										<span class="unite_devise"><?php echo the_sub_field('devise'); ?></span>
+											<span class="unite_devise"><?php echo the_sub_field('devise'); ?></span>
 
-									</div>
-								<?php } ?>
-								<p class="unite"><?php echo the_sub_field('unite'); ?></p>
+										</div>
+								</p>
+							<?php } ?>
+							<p class="unite"><?php echo the_sub_field('unite'); ?></p>
 							</div>
 
 					<?php $k = $k + 1;
@@ -158,7 +159,7 @@ get_header(); ?>
 	<div class="container raison_detre_presentation" data-aos="fade-up" data-aos-duration="500">
 		<div class="row">
 			<div class="col-12 col-md-3 my-auto " id="raisondetre_title">
-				<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-circle-.svg">
+				<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-raisondetre-circle.svg">
 				<span><?php the_field('raison_detre'); ?></span>
 			</div>
 			<div class="col-12 col-md-9" id="raisondetre_texte">

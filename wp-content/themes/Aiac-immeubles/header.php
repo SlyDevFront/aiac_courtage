@@ -62,7 +62,7 @@ $container = get_theme_mod('understrap_container_type');
 					<ul class="icon">
 						<li><a href="#searchBar" class="" data-toggle="search-form"><i class="searchIcon fa fa-search" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-icon-menu-right.svg" alt="">
+						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/menu-burger-blanc.svg" alt="">
 							</a></li>
 
 
@@ -81,21 +81,22 @@ $container = get_theme_mod('understrap_container_type');
 	} elseif (is_page_template('page-templates/domain-page.php')) { ?>
 		<section class="container-fluid header-page header-page-domain my-auto">
 			<div class="header-overlay">
-				<div class="mx-15">
-					<?php
-					if (function_exists('yoast_breadcrumb')) {
-						yoast_breadcrumb('<p class="unite" id="breadcrumbs">', '</p>');
-					}
-					?>
-					<div class="row justify-content-center">
+				<div class="container-fluid">
+
+					<div class="row no-gutters justify-content-end">
 						<div class="col-12 col-lg-4">
+							<?php
+							if (function_exists('yoast_breadcrumb')) {
+								yoast_breadcrumb('<p class="unite" id="breadcrumbs">', '</p>');
+							}
+							?>
 							<div id="title_container">
 								<img src="<?php the_field('icone_titre'); ?>" alt="">
 								<h1 class="page-title text-center text-lg-left"><?php the_title(); ?></h1>
 								<h5><?php the_field('baseline_titre'); ?></h5>
 							</div>
 						</div>
-						<div class="col-12 col-lg-8" style="background: url('<?php the_field('background_header'); ?>">
+						<div class="col-12 col-lg-7" style="background: url('<?php the_field('background_header'); ?>">
 
 						</div>
 					</div>

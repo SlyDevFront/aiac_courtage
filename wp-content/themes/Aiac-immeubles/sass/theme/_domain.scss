@@ -1,11 +1,25 @@
 .page-template-domain-page {
     .header-page-domain {
+        #title_container {
+            img {
+                padding-top: 4em;
+            }
+        }
+        div {
+            height: 100%;
+        }
+        height: 470px;
         h1 {
-            padding: 0;
+            //padding: 0;
+            font-weight: 200;
         }
         h5 {
             color: #ffffff !important;
             margin: 0 !important;
+            line-height: 25px;
+        }
+        .header-overlay {
+            height: 100%;
         }
     }
     .anchors_container {
@@ -93,7 +107,7 @@
                 li {
                     font-size: 1.04em;
                     margin: 0.5em 0;
-                    font-weight: 200;
+                    font-weight: 300;
                     color: #000000;
                     a {
                         color: $primary_blue !important;
@@ -117,7 +131,7 @@
         li {
             font-size: 1.04em;
             margin: 0.5em 0;
-            font-weight: 200;
+            font-weight: 300;
             color: #000000;
         }
         @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -135,6 +149,7 @@
         }
     }
     .prefooter-infos {
+        margin-top: 11em;
         a {
             &:hover {
                 text-decoration: none;
@@ -156,6 +171,46 @@
             img {
                 float: right;
                 margin-left: 10%;
+            }
+        }
+        #contact_fiche {
+            background: rgb(218, 218, 218);
+            padding: 1% 0;
+            position: absolute;
+            left: 38%;
+            top: -100px;
+        }
+        .pic_rounded_container_lead {
+            height: 170px;
+            width: 170px;
+            margin: initial;
+            float: left;
+            img {
+                width: 84%;
+                height: 84%;
+                border-radius: 50%;
+                margin-top: 8%;
+                margin-left: 8%;
+            }
+        }
+        .data_associe {
+            position: absolute;
+            top: 2em;
+            right: 2em;
+            .infos_item {
+                margin-bottom: 10%;
+                h4 {
+                    margin-bottom: 0;
+                    font-weight: 300;
+                }
+            }
+            .social_team_item {
+                li {
+                    margin: 0 0.5em !important;
+                    &:first-child {
+                        margin-left: 0 !important;
+                    }
+                }
             }
         }
     }

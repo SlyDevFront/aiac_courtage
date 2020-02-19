@@ -38,6 +38,7 @@
                 }
                 .mega-sub-menu {
                     background: rgba($color: $primary_light_grey, $alpha: 0.8) !important;
+                    max-height: 355px !important;
                     //height: 355px !important;
                     .mega-menu_items {
                         ul {
