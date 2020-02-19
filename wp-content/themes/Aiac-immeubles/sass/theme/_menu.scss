@@ -23,13 +23,17 @@
                 }
             }
             @media screen and (min-width:1024px) {
+                #mega-menu-21-0-1 {
+                    position: relative;
+                    height: 355px !important;
+                }
                 #mega-menu-28-0-1 {
                     height: 355px !important;
                     .mega-sub-menu {
                         position: absolute !important;
                         top: 50% !important;
                         left: 50% !important;
-                        transform: translate(-40%, -40%) !important;
+                        transform: translate(-40%, -50%) !important;
                     }
                 }
                 .mega-sub-menu {
@@ -42,7 +46,7 @@
                             top: 50% !important;
                             left: 50% !important;
                             width: 100% !important;
-                            transform: translate(-40%, 10%) !important;
+                            transform: translate(-40%, -50%) !important;
                         }
                     }
                     .mega-menu-link {

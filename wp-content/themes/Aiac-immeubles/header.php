@@ -62,7 +62,7 @@ $container = get_theme_mod('understrap_container_type');
 					<ul class="icon">
 						<li><a href="#searchBar" class="" data-toggle="search-form"><i class="searchIcon fa fa-search" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/menu-burger.svg" alt="">
+						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-icon-menu-right.svg" alt="">
 							</a></li>
 
 

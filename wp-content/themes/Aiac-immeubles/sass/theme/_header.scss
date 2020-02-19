@@ -49,11 +49,6 @@ body {
         height: 105px !important;
         z-index: 999999 !important;
     }
-    @media screen and (min-width: 992px) {
-        #logo {
-            line-height: 125px;
-        }
-    }
     #search {
         #searchform {
             input {
@@ -144,7 +139,7 @@ body {
             }
         }
         #burger_menu {
-            padding: 6px 10px !important;
+            background: #363737;
         }
         a {
             background: #ffffff;
@@ -175,8 +170,11 @@ body {
     background-size: cover !important;
     .header-overlay {
         background: rgba($color: $primary_blue, $alpha: 0.8);
-        @media screen and (max-width: 1023px) {
+        @media screen and (max-width: 767px) {
             padding-top: 105px !important;
+        }
+        @media screen and (min-width:768px) and (max-width: 1023px) {
+            padding-top: 150px !important;
         }
         h1 {
             font-size: 3.4375em;

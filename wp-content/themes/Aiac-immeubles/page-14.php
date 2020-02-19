@@ -111,6 +111,14 @@ get_header(); ?>
 							<div class="number-itemb col-12 col-md-<?= $after; ?> col-lg-<?= $after; ?> col-xl-<?= $after; ?> text-center">
 								<p class="definition"><?php echo the_sub_field('definition'); ?></p>
 								<p class="number counter"><?php echo the_sub_field('chiffres'); ?></p>
+								<?php if (get_sub_field('unite_chiffre')) { ?>
+									<div class="unite_container">
+										<span class="unite_chiffre"><?php echo the_sub_field('unite_chiffre'); ?></span>
+
+										<span class="unite_devise"><?php echo the_sub_field('devise'); ?></span>
+
+									</div>
+								<?php } ?>
 								<p class="unite"><?php echo the_sub_field('unite'); ?></p>
 							</div>
 
