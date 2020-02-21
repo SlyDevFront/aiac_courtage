@@ -94,32 +94,30 @@ $container = get_theme_mod('understrap_container_type');
 			);
 			$the_query = new WP_Query($args); ?>
 			<?php if ($the_query->have_posts()) : ?>
-				<ul>
-					<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-						<div class=" text-left">
-							<div class="item_container">
-								<div class="pic_rounded_container_lead" data-aos="fade-right" data-aos-duration="750">
+				<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+					<div class=" text-left">
+						<div class="item_container">
+							<div class="pic_rounded_container_lead" data-aos="fade-right" data-aos-duration="750">
 
-									<?php echo the_post_thumbnail($post->ID); ?>
-								</div>
-								<div class="data_associe" data-aos="fade-left" data-aos-duration="1750">
-									<div class="infos_item">
-										<h4><?php the_title(); ?></h4>
-										<h4><?php the_field('poste_occupe'); ?></h4>
-									</div>
-									<ul class="social_team_item">
-
-										<li><a href="mailto:<?php the_sub_field('email'); ?>"><i class="fas fa-envelope"></i></a></li>
-										<li><a href="<?php the_sub_field('telephone'); ?>"><i class="fas fa-phone-alt"></i></a></li>
-										<li><a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a></li>
-
-									</ul>
-								</div>
+								<?php echo the_post_thumbnail($post->ID); ?>
 							</div>
+							<div class="data_associe" data-aos="fade-left" data-aos-duration="1750">
+								<div class="infos_item">
+									<h4><?php the_title(); ?></h4>
+									<h4><?php the_field('poste_occupe'); ?></h4>
+								</div>
+								<ul class="social_team_item">
 
+									<li><a href="mailto:<?php the_sub_field('email'); ?>"><i class="fas fa-envelope"></i></a></li>
+									<li><a href="<?php the_sub_field('telephone'); ?>"><i class="fas fa-phone-alt"></i></a></li>
+									<li><a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+
+								</ul>
+							</div>
 						</div>
-					<?php endwhile; ?>
-				</ul>
+
+					</div>
+				<?php endwhile; ?>
 			<?php endif; ?>
 
 			<?php wp_reset_query();	 // Restore global post data stomped by the_post().
