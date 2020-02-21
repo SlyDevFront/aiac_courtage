@@ -17,15 +17,19 @@ $container = get_theme_mod('understrap_container_type');
 
 <section class="container-fluid anchors_container">
 	<div class="mx-5 my-3">
-		<div class="col-12 text-right">
-			<span class="anchor">Garantir&nbsp;: </span>
-			<ul class="anchors">
+		<div class="col-12 text-center text-md-left text-xl-center">
+			<span class=" d-none d-sm-inline anchor anchor_title">Garantir&nbsp;: </span>
+			<span class=" d-block d-sm-none anchor anchor_title" data-toggle="collapse" data-target=".anchors">Garantir&nbsp;<i class="fas d-inline  fa-caret-down"></i> </span>
+			<ul class="anchors collapse">
 				<?php
 				if (have_rows('ancre_bandeau')) : $count = 1;
 					while (have_rows('ancre_bandeau')) : the_row(); ?>
 						<li>
 							<a href="#anchor-<?= $count; ?>">
-								<img class="anchor_icon" src="<?php the_sub_field('icone_'); ?>"><span class="anchor"><?php the_sub_field('garantie_element'); ?></span>
+								<div class="li_container">
+									<img class="anchor_icon" src="<?php the_sub_field('icone_'); ?>"><span class="anchor"><?php the_sub_field('garantie_element'); ?></span>
+
+								</div>
 							</a>
 						</li>
 				<?php $count++;
@@ -57,8 +61,8 @@ $container = get_theme_mod('understrap_container_type');
 
 			while (have_rows('descriptif')) : the_row(); ?>
 				<div class="row my-7 justify-content-between" id="anchor-<?= $count; ?>">
-					<?php $order = ($count % 2) ? '' : 'order-lg-2'; ?>
-					<div class="col-12 col-md-5 col-lg-5 text-left <?= $order; ?>" data-aos="fade-left" data-aos-duration="1500">
+					<?php $order = ($count % 2) ? '' : 'order-md-2'; ?>
+					<div class="col-12 col-md-5 col-lg-5 text-left my-auto my-xl-0 <?= $order; ?>" data-aos="fade-left" data-aos-duration="1500">
 						<?php $pic = get_sub_field('image');
 						?>
 						<img src="<?php echo $pic['url']; ?>" alt="<?php echo $pic['alt']; ?>">
@@ -78,7 +82,7 @@ $container = get_theme_mod('understrap_container_type');
 	</div>
 </section>
 <section class="container-fluid prefooter-infos <?php echo the_title(); ?>">
-	<div class="row mx-15 py-4 justify-content-between">
+	<div class="row mx-15 py-5 justify-content-between">
 		<div class="col-12 col-lg-4 my-auto text-left" id="download">
 			<a href="<?php the_field('pdf_a_telecharger_'); ?>" target="_blank"><img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-pdf.svg" alt="">
 				<p><strong> Télecharger la plaquette</strong></p>
@@ -108,9 +112,9 @@ $container = get_theme_mod('understrap_container_type');
 								</div>
 								<ul class="social_team_item">
 
-									<li><a href="mailto:<?php the_sub_field('email'); ?>"><i class="fas fa-envelope"></i></a></li>
-									<li><a href="<?php the_sub_field('telephone'); ?>"><i class="fas fa-phone-alt"></i></a></li>
-									<li><a href="<?php the_sub_field('linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+									<li><a href="mailto:<?php the_field('email'); ?>"><i class="fas fa-envelope"></i></a></li>
+									<li><a href="<?php the_field('telephone'); ?>"><i class="fas fa-phone-alt"></i></a></li>
+									<li><a href="<?php the_field('linkedin'); ?>"><i class="fab fa-linkedin-in"></i></a></li>
 
 								</ul>
 							</div>

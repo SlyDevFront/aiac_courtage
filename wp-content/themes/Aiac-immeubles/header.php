@@ -62,7 +62,7 @@ $container = get_theme_mod('understrap_container_type');
 					<ul class="icon">
 						<li><a href="#searchBar" class="" data-toggle="search-form"><i class="searchIcon fa fa-search" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/menu-burger-blanc.svg" alt="">
+						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/menu-burger-blanc-V2.svg" alt="">
 							</a></li>
 
 
@@ -80,24 +80,29 @@ $container = get_theme_mod('understrap_container_type');
 		include 'inc/slider.php';
 	} elseif (is_page_template('page-templates/domain-page.php')) { ?>
 		<section class="container-fluid header-page header-page-domain my-auto">
+
 			<div class="header-overlay">
 				<div class="container-fluid">
 
 					<div class="row no-gutters justify-content-end">
-						<div class="col-12 col-lg-4">
+						<div class="col-12 col-sm-4">
 							<?php
 							if (function_exists('yoast_breadcrumb')) {
 								yoast_breadcrumb('<p class="unite" id="breadcrumbs">', '</p>');
 							}
 							?>
-							<div id="title_container">
-								<img src="<?php the_field('icone_titre'); ?>" alt="">
-								<h1 class="page-title text-center text-lg-left"><?php the_title(); ?></h1>
-								<h5><?php the_field('baseline_titre'); ?></h5>
+
+
+							<div id="title_container" style="background-image: linear-gradient(to right top, rgba(0,58,115,.8), rgba(0,58,115,.8)), url('<?php the_field('background_header'); ?>">
+								<div class="title_container">
+									<img src="<?php the_field('icone_titre'); ?>" alt="">
+									<h1 class="page-title text-left"><?php the_title(); ?></h1>
+									<h5><?php the_field('baseline_titre'); ?></h5>
+								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-7" style="background: url('<?php the_field('background_header'); ?>">
-
+						<div class="d-none d-sm-block col-sm-7 domain_pic_header" style="background: url('<?php the_field('background_header'); ?>">
+							<div class="gradient_overlay"></div>
 						</div>
 					</div>
 				</div>

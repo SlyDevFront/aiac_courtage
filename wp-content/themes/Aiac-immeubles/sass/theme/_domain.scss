@@ -1,7 +1,32 @@
 .page-template-domain-page {
     .header-page-domain {
+        .domain_pic_header {
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
         #title_container {
+            position: relative;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            .title_container {
+                @media screen and (max-width: 767px) {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-40%, -30%);
+                }
+            }
             img {
+                //padding-top: 4em;
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    width: 3em;
+                    padding-top: 2em !important;
+                }
+            }
+            @media screen and (min-width: 768px) {
+                background-image: none !important;
                 padding-top: 4em;
             }
         }
@@ -12,35 +37,105 @@
         h1 {
             //padding: 0;
             font-weight: 200;
+            @media screen and (max-width: 1199px) {
+                padding: 0.5em 0 !important;
+            }
         }
         h5 {
             color: #ffffff !important;
             margin: 0 !important;
             line-height: 25px;
+            @media screen and (max-width: 1199px) {
+                font-size: 0.75em !important;
+            }
+        }
+        .gradient_overlay {
+            position: absolute;
+            width: 100%;
+            background: rgba($color: $primary_blue, $alpha: 0.85);
+            height: 100%;
         }
         .header-overlay {
+            @media screen and (max-width: 767px) {
+                #breadcrumbs {
+                    position: absolute;
+                    z-index: 99;
+                    left: 9%;
+                    font-size: 0.8em;
+                    line-height: 25px !important;
+                }
+            }
             height: 100%;
         }
     }
     .anchors_container {
         background-color: #ffffff;
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            div {
+                padding: 0 !important;
+            }
+            //padding: 3% 0;
+        }
         .anchors {
             list-style: none;
             padding: 0 !important;
             margin: 0 !important;
-            display: inline;
+            @media screen and (min-width: 767px) {
+                display: inline;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                position: absolute;
+                right: -2em;
+            }
             li {
                 display: inline;
-                margin-left: 12.5em;
-                .anchor_icon {
-                    margin-right: 1%;
-                    vertical-align: middle;
+                margin: 0 5vw;
+                vertical-align: middle;
+                // @media screen and (max-width: 768px) {
+                //     display: block;
+                //     margin: 2vw;
+                // }
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    margin: 2vw 0 !important;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    margin: 1.6vw;
+                    display: inline-block;
+                }
+                .li_container {
+                    display: inline;
+                    @media screen and (min-width: 768px) and (max-width: 1199px) {
+                        display: inline-block;
+                    }
+                    .anchor_icon {
+                        margin-right: 1%;
+                        vertical-align: middle;
+                        @media screen and (min-width: 768px) and (max-width: 1199px) {
+                            height: 2em;
+                            display: block;
+                            margin: auto;
+                            margin-bottom: 0.5em;
+                        }
+                        @media screen and (max-width: 767px) {
+                            width: 16px;
+                        }
+                    }
                     a {
                         &:hover {
                             text-decoration: none !important;
                         }
                     }
                 }
+            }
+        }
+        span.anchor_title {
+            @media screen and (min-width: 768px) and (max-width: 1199px) {
+                vertical-align: middle;
+                display: inline-block;
+            }
+            @media screen and (max-width: 768px) {
+                font-weight: bold;
             }
         }
         .anchor {
@@ -55,6 +150,9 @@
             @media screen and (max-width: 767px) {
                 width: 100% !important;
                 font-size: 1.041875em !important;
+            }
+            @media screen and (min-width:768px) and (max-width: 1024px) {
+                font-size: 0.75em !important;
             }
         }
     }
@@ -99,16 +197,29 @@
         }
         .title {
             ul {
-                list-style-image: url('../img/aiac-courtage-5c-liste-after.svg');
+                //list-style-image: url('../img/aiac-courtage-5c-liste-after.svg');
+                list-style: none !important;
                 padding-left: 0 !important;
                 list-style-position: inside;
                 margin-bottom: 0 !important;
                 margin: 5% 0;
                 li {
-                    font-size: 1.04em;
+                    position: relative;
+                    color: #000000 !important;
+                    font-size: 1.041875em !important;
+                    line-height: initial;
+                    padding-left: 1.8em;
                     margin: 0.5em 0;
                     font-weight: 300;
-                    color: #000000;
+                    &::before {
+                        content: url('../img/aiac-courtage-5c-liste-after.svg');
+                        vertical-align: sub;
+                        margin-right: 1em;
+                        left: 0;
+                        width: 1.2em;
+                        position: absolute;
+                        top: .3em;
+                    }
                     a {
                         color: $primary_blue !important;
                     }
@@ -120,13 +231,45 @@
         h3 {
             font-size: 2.604375em;
             line-height: 30px !important;
+            @media screen and (max-width: 767px) {
+                margin-top: 0.5em;
+            }
+            @media screen and (max-width: 768px) {
+                font-size: 2.4em;
+                line-height: 45px !important;
+            }
         }
         p {
             margin: 40px 0 !important;
         }
         ul {
+            //list-style-image: url('../img/aiac-courtage-5c-liste-after.svg');
+            list-style: none !important;
             padding-left: 0 !important;
             list-style-position: inside;
+            margin-bottom: 0 !important;
+            margin: 5% 0;
+            li {
+                position: relative;
+                color: #000000 !important;
+                font-size: 1.041875em !important;
+                line-height: initial;
+                padding-left: 1.8em;
+                margin: 0.5em 0;
+                font-weight: 300;
+                &::before {
+                    content: url('../img/aiac-courtage-5c-liste-after.svg');
+                    vertical-align: sub;
+                    margin-right: 1em;
+                    left: 0;
+                    width: 1.2em;
+                    position: absolute;
+                    top: .3em;
+                }
+                a {
+                    color: $primary_blue !important;
+                }
+            }
         }
         li {
             font-size: 1.04em;
@@ -149,7 +292,16 @@
         }
     }
     .prefooter-infos {
-        margin-top: 11em;
+        margin-top: 14em;
+        @media screen and (max-width: 768px) {
+            margin-top: unset;
+        }
+        .mx-15 {
+            @media screen and (max-width: 768px) {
+                width: 100% !important;
+                margin-left: 0 !important;
+            }
+        }
         a {
             &:hover {
                 text-decoration: none;
@@ -175,16 +327,35 @@
         }
         #contact_fiche {
             background: rgb(218, 218, 218);
-            padding: 1% 0;
+            padding: 3% 0 3% 2%;
             position: absolute;
             left: 38%;
-            top: -100px;
+            top: -130px;
+            @media screen and (max-width: 768px) {
+                position: relative;
+                left: 0;
+                top: inherit;
+                margin: 5% 0;
+                padding: 3% 0 3% 20%;
+            }
+            @media screen and (max-width: 767px) {
+                padding: 3% 0 3% 3%;
+            }
         }
         .pic_rounded_container_lead {
             height: 170px;
             width: 170px;
             margin: initial;
             float: left;
+            @media screen and (max-width: 767px) {
+                height: 8em;
+                width: 8em;
+            }
+            &:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
             img {
                 width: 84%;
                 height: 84%;
@@ -195,13 +366,20 @@
         }
         .data_associe {
             position: absolute;
-            top: 2em;
-            right: 2em;
+            top: 50%;
+            left: 50%;
+            transform: translate(0, -50%);
             .infos_item {
-                margin-bottom: 10%;
+                margin-bottom: 3em;
+                @media screen and (max-width: 767px) {
+                    margin-bottom: 1em;
+                }
                 h4 {
                     margin-bottom: 0;
                     font-weight: 300;
+                    @media screen and (max-width: 767px) {
+                        font-size: 1em !important;
+                    }
                 }
             }
             .social_team_item {

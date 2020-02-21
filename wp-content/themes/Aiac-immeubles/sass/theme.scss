@@ -24,7 +24,7 @@ html {
 }
 
 ul:not(.mega-menu) {
-    list-style-image: url('../img/aiac-courtage-5c-liste-after.svg');
+    //list-style-image: url('../img/aiac-courtage-5c-liste-after.svg');
 }
 
 strong {
@@ -161,7 +161,7 @@ section {
 }
 
 h1 {
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
         font-size: 1.125em !important;
     }
 }
