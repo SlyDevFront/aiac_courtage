@@ -1,0 +1,88 @@
+.page-template-standard-page {
+    .header-page-standard {
+        background: linear-gradient(to right, $primary_blue, #007695);
+        @media screen and (max-width: 768px) {
+            padding-top: 105px;
+            #breadcrumbs {
+                line-height: 25px !important;
+            }
+        }
+    }
+    .standard-page {
+        padding: 3% 0;
+        @media screen and (max-width: 768px) {
+            .alignleft {
+                margin: 0.5em 0 !important;
+            }
+            H3 {
+                line-height: 45px;
+                margin-bottom: 1rem !important;
+                font-size: 2.34375em !important;
+            }
+        }
+        @media screen and (min-width: 768px) {
+            h1 {
+                font-size: 3.4em;
+                font-weight: 200 !important;
+            }
+            h2 {
+                font-size: 2.864375em !important;
+                line-height: 60px;
+                margin: 1em 0 !important;
+            }
+            h3 {
+                line-height: 60px;
+            }
+            h4 {
+                line-height: 41px;
+            }
+            h5 {
+                letter-spacing: 3px !important;
+                line-height: 60px;
+            }
+        }
+        a {
+            color: $primary_blue;
+            text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        p {
+            margin-bottom: 1rem !important;
+        }
+        .alignleft {
+            margin-right: 1em !important;
+        }
+        ul {
+            //list-style-image: url('../img/aiac-courtage-5c-liste-after.svg');
+            list-style: none !important;
+            padding-left: 0 !important;
+            list-style-position: inside;
+            margin: 2em 0 !important;
+            li {
+                position: relative;
+                color: #000000 !important;
+                font-size: 1.041875em !important;
+                line-height: initial;
+                padding-left: 1.8em;
+                font-weight: 300;
+                @media screen and (max-width: 767px) {
+                    padding-left: 2em;
+                    font-weight: 300;
+                    text-indent: -2em;
+                }
+                &::before {
+                    content: url('../img/aiac-courtage-5c-liste-after.svg');
+                    vertical-align: sub;
+                    margin-right: 1em;
+                    left: 0;
+                    width: 1.2em;
+                }
+                a {
+                    color: $primary_blue !important;
+                }
+            }
+        }
+    }
+}

@@ -26,7 +26,7 @@ body {
             color: #00457c;
             font-size: 0.9em;
             &::after {
-                font-family: 'FontAwesome';
+                font-family: "FontAwesome";
                 content: $fa-var-arrow-circle-right;
                 margin-left: 1%;
             }
@@ -59,7 +59,7 @@ body {
                 color: #ffffff;
                 visibility: hidden;
                 outline: none !important;
-                transition: .3s;
+                transition: 0.3s;
                 &:focus {
                     // outline: none !important;
                 }
@@ -71,7 +71,7 @@ body {
             border: 1px solid #343434;
             width: 3em;
             height: 3em;
-            transition: .3s;
+            transition: 0.3s;
             i {
                 color: #5c5c5c;
             }
@@ -113,6 +113,77 @@ body {
     }
 }
 
+.overlay_slidebar {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    visibility: hidden;
+}
+
+.slideBar {
+    position: fixed;
+    z-index: 100;
+    border-left: 1px solid $primary_blue;
+    top: 0;
+    // right: 0;
+    right: -400px;
+    height: 100vh;
+    width: 400px;
+    background: #fff;
+    i.fa-times {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+        font-size: 2em;
+        color: $second_dark_grey;
+    }
+    .data_container {
+        position: absolute;
+        width: 300px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        .widget_media_image {
+            margin-bottom: 2em;
+        }
+        #linkedIn_sidebar {
+            display: block;
+            margin-bottom: 2em;
+            margin-top: -0.7em;
+            i {
+                color: $primary_blue;
+                border: 1px solid $primary_blue;
+                border-radius: 35px;
+                padding: 12px 13px;
+                transition: .2s;
+                &:hover {
+                    color: #fff;
+                    background-color: $primary_blue;
+                }
+            }
+        }
+        button {
+            border: none;
+            background: $primary_blue;
+            transition: .2s;
+            a {
+                font-weight: 200 !important;
+            }
+            &:hover {
+                filter: brightness(1.1);
+            }
+            a {
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
 .icon {
     @media screen and (min-width: 992px) and(max-width: 1024px) {
         li {
@@ -131,7 +202,7 @@ body {
         box-sizing: border-box;
         display: inline;
         // margin-right: 2%;
-        transition: .3s;
+        transition: 0.3s;
         &:hover {
             //@warn background: #363737;
             a {
@@ -141,6 +212,13 @@ body {
         #burger_menu {
             background: #363737;
             padding: 6px 9px;
+            transition: all 0.2s;
+            &:hover {
+                background: none;
+                img {
+                    filter: brightness(0);
+                }
+            }
         }
         a {
             background: #ffffff;
@@ -148,7 +226,7 @@ body {
             border-radius: 50%;
             margin-right: 2%;
             border: 1px solid #363737;
-            transition: .3s;
+            transition: 0.3s;
             &:hover {
                 background: #363737;
                 color: #ffffff;
@@ -157,6 +235,10 @@ body {
             img {
                 width: 25px;
                 vertical-align: bottom;
+                transition: all 0.2s;
+                &:hover {
+                    filter: brightness(0);
+                }
             }
             i {
                 font-size: 1.1em;
@@ -175,7 +257,7 @@ body {
         @media screen and (max-width: 767px) {
             padding-top: 105px !important;
         }
-        @media screen and (min-width:768px) and (max-width: 1023px) {
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
             padding-top: 150px !important;
         }
         h1 {

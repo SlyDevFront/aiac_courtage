@@ -64,6 +64,25 @@ $container = get_theme_mod('understrap_container_type');
 <script>
 	jQuery(document).ready(function() {
 		var search = jQuery('#searchformdesktop');
+		//jQuery('.overlay_sidebar').hide(200);
+		jQuery('#burger_menu').click(function() {
+			jQuery('.overlay_sidebar').show();
+			jQuery('.slideBar').animate({
+				right: '0'
+			}, "150", 'swing')
+		});
+		jQuery('.fa-times').click(function() {
+			//jQuery('.overlay_slidebar').hide();
+			jQuery('.slideBar').animate({
+				right: '-450px'
+			}, "50", 'swing')
+		});
+		jQuery('.overlay_slidebar').click(function() {
+			//jQuery('this').hide();
+			jQuery('.slideBar').animate({
+				right: '-450px'
+			}, "50", 'swing')
+		});
 		jQuery('.fa-search').click(function() {
 			search.slideToggle(200);
 			if (search.is(':visible')) {

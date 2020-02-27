@@ -29,6 +29,7 @@ $container = get_theme_mod('understrap_container_type');
 
 <body <?php body_class(); ?> <?php understrap_body_attributes(); ?>>
 	<?php do_action('wp_body_open'); ?>
+	<div class="overlay_slidebar"></div>
 	<div class="container-fluid entete d-none d-sm-block">
 		<div class="mx-15 ">
 			<div class="row">
@@ -64,11 +65,18 @@ $container = get_theme_mod('understrap_container_type');
 						<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/menu-burger-blanc-V2.svg" alt="">
 							</a></li>
-
-
 					</ul>
 				</div>
 
+				<div class="slideBar">
+
+					<a href="#"><i class="fas fa-times"></i></a>
+					<div class="data_container">
+
+						<?php get_template_part('sidebar-templates/sidebar', 'right'); ?>
+
+					</div>
+				</div>
 			</div>
 			<div class="col-12" id="searchformdesktop">
 				<?php get_search_form();
@@ -88,7 +96,7 @@ $container = get_theme_mod('understrap_container_type');
 						<div class="col-12 col-sm-4">
 							<?php
 							if (function_exists('yoast_breadcrumb')) {
-								yoast_breadcrumb('<p class="unite" id="breadcrumbs">', '</p>');
+								yoast_breadcrumb('<p class="unite" id="breadcrumbs" >', '</p>');
 							}
 							?>
 
@@ -105,6 +113,19 @@ $container = get_theme_mod('understrap_container_type');
 							<div class="gradient_overlay"></div>
 						</div>
 					</div>
+				</div>
+			</div>
+		</section>
+	<?php } elseif (is_page_template('page-templates/standard-page.php')) { ?>
+		<section class="container-fluid header-page-standard my-auto">
+			<div class="header-overlay">
+				<div class="mx-15">
+					<?php
+					if (function_exists('yoast_breadcrumb')) {
+						yoast_breadcrumb('<p class="unite" id="breadcrumbs" data-aos="fade-right" data-aos-duration="750">', '</p>');
+					}
+					?>
+
 				</div>
 			</div>
 		</section>
