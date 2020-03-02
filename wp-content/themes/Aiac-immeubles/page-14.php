@@ -86,8 +86,8 @@ get_header(); ?>
 				if (have_rows('chiffre_cle_2')) :
 					while (have_rows('chiffre_cle_2')) : the_row(); ?>
 						<div class="number-itemb text-center">
-							<p class="definition"><?php echo the_sub_field('definition'); ?></p>
 							<p class="number counter"><?php echo the_sub_field('chiffres'); ?></p>
+							<p class="definition"><?php echo the_sub_field('definition'); ?></p>
 							<p class="unite"><?php echo the_sub_field('unite'); ?></p>
 						</div>
 

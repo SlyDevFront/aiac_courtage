@@ -495,10 +495,11 @@
                             right: 2em;
                             top: 1%;
                         }
-                        font-size: 2.083125em !important;
-                        position: absolute;
-                        right: -1em;
-                        top: 12%;
+                        font-size: 1.2em !important;
+                        display: inline-block;
+                        font-weight: 200;
+                        /* height: 100%; */
+                        vertical-align: 0.5em;
                     }
                 }
             }
@@ -506,6 +507,7 @@
                 font-size: 5.208125em;
                 line-height: 0.85em;
                 font-weight: 400;
+                display: inline-block;
                 @media screen and (min-width: 768px) and (max-width: 992px) {
                     font-size: 3.5em !important;
                 }
@@ -581,7 +583,7 @@
                 display: inline-block;
             }
             .unite_chiffre {
-                font-size: 1.74375rem;
+                font-size: 1.2em;
                 font-weight: 200;
                 margin-right: -0.1em;
                 line-height: 0em;
@@ -590,7 +592,7 @@
                 }
             }
             .unite_devise {
-                font-size: 3rem !important;
+                font-size: 2.2em !important;
                 line-height: .85em !important;
                 font-weight: 200 !important;
                 @media screen and (min-width: 768px) and (max-width: 992px) {
