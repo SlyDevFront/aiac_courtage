@@ -70,9 +70,9 @@ $container = get_theme_mod('understrap_container_type');
 
 				<div class="slideBar">
 
-					<a href="#"><i class="fas fa-times"></i></a>
-					<div class="data_container">
 
+					<div class="data_container">
+						<a href="#"><i class="fas fa-times"></i></a>
 						<?php get_template_part('sidebar-templates/sidebar', 'right'); ?>
 
 					</div>

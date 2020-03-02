@@ -134,9 +134,9 @@ body {
     width: 400px;
     background: #fff;
     i.fa-times {
-        position: absolute;
-        top: 1em;
-        left: 1em;
+        // position: absolute;
+        // top: 1em;
+        // left: 1em;
         font-size: 2em;
         color: $second_dark_grey;
     }
@@ -158,7 +158,7 @@ body {
                 border: 1px solid $primary_blue;
                 border-radius: 35px;
                 padding: 12px 13px;
-                transition: .2s;
+                transition: 0.2s;
                 &:hover {
                     color: #fff;
                     background-color: $primary_blue;
@@ -168,7 +168,7 @@ body {
         button {
             border: none;
             background: $primary_blue;
-            transition: .2s;
+            transition: 0.2s;
             a {
                 font-weight: 200 !important;
             }
