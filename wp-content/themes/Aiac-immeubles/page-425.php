@@ -14,7 +14,8 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-get_header(); ?>
+get_header();
+?>
 <section class="presentation_charte container-fluid" data-aos="fade-up" data-aos-duration="1500">
 	<div class="container">
 		<div class="row">
@@ -48,12 +49,15 @@ get_header(); ?>
 					while ($loop_leader->have_posts()) {
 						$loop_leader->the_post(); ?>
 
-						<div class="col-12 col-md-6 col-lg-4 team_item text-center" data-aos="fade-up" data-aos-duration="1000">
+						<div class="col-12 col-md-6 col-lg-4 team_item text-center color-<?= the_title(); ?>" data-aos="fade-up" data-aos-duration="1000">
 							<div class="garantie_item_container">
 								<div class="pic-container">
-									<a href="<?php echo the_permalink(); ?>"><?= the_post_thumbnail($post->ID); ?></a>
+									<a href="<?php the_field('page_en_lien'); ?>"><?= the_post_thumbnail($post->ID); ?></a>
 								</div>
-								<h4><?= the_title(); ?></h4>
+								<a href="<?php the_field('page_en_lien'); ?>">
+									<h4><?= the_title(); ?>
+									</h4>
+								</a>
 								<p><?= the_field('description_big'); ?></p>
 							</div>
 

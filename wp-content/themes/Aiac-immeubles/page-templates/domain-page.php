@@ -20,7 +20,7 @@ $container = get_theme_mod('understrap_container_type');
 		<div class="col-12 text-center text-md-left text-xl-center">
 			<span class=" d-none d-sm-inline anchor anchor_title">Garantir&nbsp;: </span>
 			<span class=" d-block d-sm-none anchor anchor_title" data-toggle="collapse" data-target=".anchors">Garantir&nbsp;<i class="fas d-inline  fa-caret-down"></i> </span>
-			<ul class="anchors collapse">
+			<ul class="anchors collapse color-<?= the_title(); ?>">
 				<?php
 				if (have_rows('ancre_bandeau')) : $count = 1;
 					while (have_rows('ancre_bandeau')) : the_row(); ?>
@@ -77,8 +77,6 @@ $container = get_theme_mod('understrap_container_type');
 		<?php $count++;
 			endwhile;
 		endif; ?>
-
-
 	</div>
 </section>
 <section class="container-fluid prefooter-infos <?php echo the_title(); ?>">
@@ -99,7 +97,7 @@ $container = get_theme_mod('understrap_container_type');
 			$the_query = new WP_Query($args); ?>
 			<?php if ($the_query->have_posts()) : ?>
 				<?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
-					<div class=" text-left">
+					<div class=" text-left text-lg-center text-xl-left">
 						<div class="item_container">
 							<div class="pic_rounded_container_lead" data-aos="fade-right" data-aos-duration="750">
 
@@ -128,8 +126,8 @@ $container = get_theme_mod('understrap_container_type');
 			?>
 		</div>
 		<div class="col-12 col-lg-4 text-right" id="contact_domain">
-			<a href="mailto:<?php the_field('mail_contact'); ?>"><img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-mail.svg" alt="">
-				<p>Contactez-nous</p>
+			<a href="<?php the_permalink(16); ?>"><img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-mail.svg" alt="">
+				<p><strong>Contactez-nous</strong></p>
 				<p>Assurances &nbsp;<?php echo the_title(); ?></p>
 			</a>
 		</div>

@@ -247,3 +247,133 @@ h6 {
 .Sport {
     background-color: #e64a47;
 }
+
+.color-Sport {
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+            h4 {
+                color: $Sport;
+            }
+        }
+    }
+    h4 {
+        &:hover {
+            color: $Sport;
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Sport !important;
+            }
+        }
+    }
+}
+
+.color-Immeubles {
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+            h4 {
+                color: $Immeubles;
+            }
+        }
+    }
+    h4 {
+        &:hover {
+            color: $Immeubles;
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Immeubles !important;
+            }
+        }
+    }
+}
+
+.color-Entreprises {
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+            h4 {
+                color: $Entreprise;
+            }
+        }
+    }
+    h4 {
+        &:hover {
+            color: $Entreprise;
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Entreprise !important;
+            }
+        }
+    }
+}
+
+.color-Construction {
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+            h4 {
+                color: $Construction;
+            }
+        }
+    }
+    h4 {
+        &:hover {
+            color: $Construction;
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Construction !important;
+            }
+        }
+    }
+}
+
+.color-Collectives {
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+            h4 {
+                color: $Collectives;
+            }
+        }
+    }
+    h4 {
+        &:hover {
+            color: $Collectives;
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Collectives !important;
+            }
+        }
+    }
+}

@@ -79,12 +79,15 @@ get_header();
 					if ($loop_specialites->have_posts()) {
 						while ($loop_specialites->have_posts()) {
 							$loop_specialites->the_post(); ?>
-							<div class="col-12 col-md-6 col-lg-2 text-center garantie_item">
+							<div class="col-12 col-md-6 col-lg-2 text-center color-<?= the_title(); ?> garantie_item">
 								<div class="garantie_item_container">
 									<div class="pic-container">
 										<a href="<?php echo the_permalink(); ?>"><?= the_post_thumbnail($post->ID); ?></a>
 									</div>
-									<h4><?= the_title(); ?></h4>
+									<a href="<?php the_field('page_en_lien'); ?>">
+										<h4><?= the_title(); ?>
+										</h4>
+									</a>
 									<p><?= the_field('description'); ?></p>
 								</div>
 							</div>

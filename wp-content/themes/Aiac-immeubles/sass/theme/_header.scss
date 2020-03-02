@@ -119,8 +119,8 @@ body {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
-    z-index: 10;
-    visibility: hidden;
+    z-index: 20;
+    display: none;
 }
 
 .slideBar {
@@ -184,10 +184,16 @@ body {
     }
 }
 
+#search {
+    @media screen and (min-width: 992px) and(max-width: 1024px) {
+        padding: 0 !important;
+    }
+}
+
 .icon {
     @media screen and (min-width: 992px) and(max-width: 1024px) {
         li {
-            padding: 3px 10px !important;
+            //padding: 3px 10px !important;
             a {
                 i {
                     font-size: 1em !important;

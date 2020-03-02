@@ -64,21 +64,23 @@ $container = get_theme_mod('understrap_container_type');
 <script>
 	jQuery(document).ready(function() {
 		var search = jQuery('#searchformdesktop');
-		//jQuery('.overlay_sidebar').hide(200);
 		jQuery('#burger_menu').click(function() {
-			jQuery('.overlay_sidebar').show();
+			jQuery('.overlay_slidebar').show(0);
+			jQuery('body').css("overflow", "hidden");
 			jQuery('.slideBar').animate({
 				right: '0'
 			}, "150", 'swing')
 		});
 		jQuery('.fa-times').click(function() {
-			//jQuery('.overlay_slidebar').hide();
+			jQuery('.overlay_slidebar').hide(100);
+			jQuery('body').css("overflow", "initial");
 			jQuery('.slideBar').animate({
 				right: '-450px'
 			}, "50", 'swing')
 		});
 		jQuery('.overlay_slidebar').click(function() {
-			//jQuery('this').hide();
+			jQuery(this).hide(100);
+			jQuery('body').css("overflow", "initial");
 			jQuery('.slideBar').animate({
 				right: '-450px'
 			}, "50", 'swing')
@@ -94,8 +96,6 @@ $container = get_theme_mod('understrap_container_type');
 		AOS.init();
 		jQuery(window).scroll(function() {
 			var scroll = jQuery(window).scrollTop();
-			console.log(scroll);
-
 			if (scroll >= 45) {
 				jQuery(".header").addClass("sticky");
 			} else {

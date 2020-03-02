@@ -22,6 +22,8 @@ $container = get_theme_mod('understrap_container_type');
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'>
+	</script>
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://kit.fontawesome.com/c991911575.js" crossorigin="anonymous"></script>
 	<?php wp_head(); ?>
@@ -63,7 +65,7 @@ $container = get_theme_mod('understrap_container_type');
 					<ul class="icon">
 						<li><a href="#searchBar" class="" data-toggle="search-form"><i class="searchIcon fa fa-search" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-						<li><a id="burger_menu" href="#"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/menu-burger-blanc-V2.svg" alt="">
+						<li><a id="burger_menu" href="#" disabled="true"> <img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/menu-burger-blanc-V2.svg" alt="">
 							</a></li>
 					</ul>
 				</div>
@@ -93,7 +95,7 @@ $container = get_theme_mod('understrap_container_type');
 				<div class="container-fluid">
 
 					<div class="row no-gutters justify-content-end">
-						<div class="col-12 col-sm-4">
+						<div class="col-12 col-sm-4 col-md-5 left_content-title">
 							<?php
 							if (function_exists('yoast_breadcrumb')) {
 								yoast_breadcrumb('<p class="unite" id="breadcrumbs" >', '</p>');
