@@ -26,6 +26,7 @@ if (!function_exists('understrap_scripts')) {
 
 		$js_version = $theme_version . '.' . filemtime(get_template_directory() . '/js/theme.min.js');
 
+		wp_enqueue_script('tarteaucitron', get_template_directory_uri() . '/js/tarteaucitron/tarteaucitron.js', array(), '20160412', true);
 
 		wp_enqueue_script('understrap-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $js_version, true);
 		//wp_enqueue_script('understrap-scripts', get_template_directory_uri() . '/js/js', array(), $js_version, true);

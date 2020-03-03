@@ -377,3 +377,65 @@ h6 {
         }
     }
 }
+
+
+/* Cookie Banner */
+
+#tarteaucitronRoot #tarteaucitronAlertBig {
+    top: auto !important;
+    bottom: 0;
+    opacity: 1;
+    background: rgb(54, 55, 55);
+}
+
+#tarteaucitronAlertBig {
+    border-top: 1px solid #fff;
+}
+
+#tarteaucitronPersonalize {
+    font-size: 12px !important;
+    font-family: inherit !important;
+    background: $primary_blue !important;
+}
+
+#tarteaucitronAlertBig #tarteaucitronCloseAlert {
+    background: #ffffff !important;
+    opacity: 0.9 !important;
+    font-size: 12px !important;
+}
+
+#tarteaucitronPersonalize {}
+
+#tarteaucitronDisclaimerAlert {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#tarteaucitronDisclaimerAlert a {
+    text-decoration: underline;
+}
+
+#tarteaucitronDisclaimerAlert a:hover {
+    text-decoration: none;
+}
+
+#tarteaucitronAlertBig #tarteaucitronDisclaimerAlert,
+#tarteaucitronAlertBig #tarteaucitronDisclaimerAlert b {
+    font-size: 14px !important;
+    font-family: inherit !important;
+}
+
+#tarteaucitronBack {
+    background: #000 !important;
+}
+
+#tarteaucitronDetailsanalytic {
+    opacity: .97;
+}
+
+#tarteaucitronServices {
+    font-family: inherit !important;
+}
+
+
+/* /Cookie Banner */
