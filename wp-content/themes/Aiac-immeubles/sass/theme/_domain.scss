@@ -7,9 +7,9 @@
         }
         .left_content-title {
             background-image: linear-gradient(to right top, #0079a0, #003a69);
-        }
-        @media screen and (min-width: 1201px) {
-            padding-left: 8em;
+            @media screen and (min-width: 1201px) {
+                padding-left: 8em !important;
+            }
         }
         @media screen and (min-width: 768px) and (max-width: 1200px) {
             #breadcrumbs {
@@ -104,7 +104,7 @@
             @media screen and (min-width: 767px) {
                 display: inline;
             }
-            @media screen and (min-width: 1024px) and (max-width:1199px) {
+            @media screen and (min-width: 1024px) and (max-width: 1199px) {
                 display: inline;
                 padding-left: 8em !important;
             }
@@ -178,7 +178,7 @@
                 width: 100% !important;
                 font-size: 1.041875em !important;
             }
-            @media screen and (min-width:768px) and (max-width: 1024px) {
+            @media screen and (min-width: 768px) and (max-width: 1024px) {
                 font-size: 0.75em !important;
             }
         }
@@ -245,13 +245,13 @@
                     margin: 0.5em 0;
                     font-weight: 300;
                     &::before {
-                        content: url('../img/aiac-courtage-5c-liste-after.svg');
+                        content: url("../img/aiac-courtage-5c-liste-after.svg");
                         vertical-align: sub;
                         margin-right: 1em;
                         left: 0;
                         width: 1.2em;
                         position: absolute;
-                        top: .3em;
+                        top: 0.3em;
                     }
                     a {
                         color: $primary_blue !important;
@@ -291,13 +291,13 @@
                 margin: 0.5em 0;
                 font-weight: 300;
                 &::before {
-                    content: url('../img/aiac-courtage-5c-liste-after.svg');
+                    content: url("../img/aiac-courtage-5c-liste-after.svg");
                     vertical-align: sub;
                     margin-right: 1em;
                     left: 0;
                     width: 1.2em;
                     position: absolute;
-                    top: .3em;
+                    top: 0.3em;
                 }
                 a {
                     color: $primary_blue !important;
@@ -329,7 +329,7 @@
         @media screen and (max-width: 768px) {
             margin-top: unset;
         }
-        @media screen and (min-width: 1024px) and (max-width:1199px) {
+        @media screen and (min-width: 1024px) and (max-width: 1199px) {
             #download {
                 p {
                     display: inline;
@@ -453,7 +453,7 @@
             }
             @media screen and (min-width: 1024px) and (max-width: 1199px) {
                 .infos_item {
-                    margin: 1.5em 0 !important
+                    margin: 1.5em 0 !important;
                 }
                 .pic_rounded_container_lead {
                     margin: auto !important;
