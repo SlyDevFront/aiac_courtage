@@ -26,8 +26,8 @@ $container = get_theme_mod('understrap_container_type');
 					while (have_rows('ancre_bandeau')) : the_row(); ?>
 						<li>
 							<a href="#anchor-<?= $count; ?>">
-								<div class="li_container">
-									<img class="anchor_icon" src="<?php the_sub_field('icone_'); ?>"><span class="anchor"><?php the_sub_field('garantie_element'); ?></span>
+								<div class="li_container block-<?= $count; ?>">
+									<img class=" anchor_icon test" src="<?php the_sub_field('icone_'); ?>"><span class="anchor"><?php the_sub_field('garantie_element'); ?></span>
 
 								</div>
 							</a>
