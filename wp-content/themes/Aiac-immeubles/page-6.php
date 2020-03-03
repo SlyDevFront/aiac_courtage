@@ -82,7 +82,7 @@ get_header();
 							<div class="col-12 col-md-6 col-lg-2 text-center color-<?= the_title(); ?> garantie_item">
 								<div class="garantie_item_container">
 									<div class="pic-container">
-										<a href="<?php echo the_permalink(); ?>"><?= the_post_thumbnail($post->ID); ?></a>
+										<a href="<?php the_field('page_en_lien'); ?>"><?= the_post_thumbnail($post->ID); ?></a>
 									</div>
 									<a href="<?php the_field('page_en_lien'); ?>">
 										<h4><?= the_title(); ?>
