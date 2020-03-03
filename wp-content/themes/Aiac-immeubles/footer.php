@@ -96,11 +96,15 @@ $container = get_theme_mod('understrap_container_type');
 		AOS.init();
 		jQuery(window).scroll(function() {
 			var scroll = jQuery(window).scrollTop();
-			if (scroll >= 45) {
-				jQuery(".header").addClass("sticky");
-			} else {
-				jQuery(".header").removeClass("sticky");
+			var width = jQuery(window).width();
+			if (width >= 1024) {
+				if (scroll >= 45) {
+					jQuery(".header").addClass("sticky");
+				} else {
+					jQuery(".header").removeClass("sticky");
+				}
 			}
+
 		});
 	});
 </script>
