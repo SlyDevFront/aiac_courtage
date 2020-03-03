@@ -65,14 +65,14 @@ button {
         vertical-align: middle;
         line-height: 30px;
     }
-    &:hover {
-        transform: translateY(-0.2rem);
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    }
-    &:active {
-        transform: translateX(-1px);
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    }
+    // &:hover {
+    //     transform: translateY(-0.2rem);
+    //     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    // }
+    // &:active {
+    //     transform: translateX(-1px);
+    //     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    // }
 }
 
 .cover {
