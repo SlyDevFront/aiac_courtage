@@ -248,8 +248,29 @@ h6 {
     background-color: #e64a47;
 }
 
+.prefoooter-color-Sport {
+    background-color: $Sport;
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+            h4 {
+                color: $Sport;
+            }
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Sport !important;
+            }
+        }
+    }
+}
+
 .color-Sport {
-    background-color: #e64a47;
     .garantie_item_container {
         transition: all .3s;
         &:hover {
@@ -275,8 +296,26 @@ h6 {
     }
 }
 
-.color-Immeubles {
+.prefoooter-color-Immeuble {
     background-color: $Immeubles;
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Immeubles !important;
+            }
+        }
+    }
+}
+
+.color-Immeuble {
     .garantie_item_container {
         transition: all .3s;
         &:hover {
@@ -302,8 +341,26 @@ h6 {
     }
 }
 
-.color-Entreprises {
+.prefoooter-color-Entreprises {
     background-color: $Entreprise;
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Entreprise !important;
+            }
+        }
+    }
+}
+
+.color-Entreprises {
     .garantie_item_container {
         transition: all .3s;
         &:hover {
@@ -329,8 +386,26 @@ h6 {
     }
 }
 
-.color-Construction {
+.prefoooter-color-Construction {
     background-color: $Construction;
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Construction !important;
+            }
+        }
+    }
+}
+
+.color-Construction {
     .garantie_item_container {
         transition: all .3s;
         &:hover {
@@ -356,8 +431,26 @@ h6 {
     }
 }
 
-.color-Collectives {
+.prefoooter-color-Collectives {
     background-color: $Collectives;
+    .garantie_item_container {
+        transition: all .3s;
+        &:hover {
+            a {
+                text-decoration: none !important;
+            }
+        }
+    }
+    a {
+        &:hover {
+            span {
+                color: $Collectives !important;
+            }
+        }
+    }
+}
+
+.color-Collectives {
     .garantie_item_container {
         transition: all .3s;
         &:hover {

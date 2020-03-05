@@ -20,7 +20,7 @@ $container = get_theme_mod('understrap_container_type');
 		<div class="col-12 text-center text-md-left text-xl-center">
 			<span class=" d-none d-sm-inline anchor anchor_title">Garantir&nbsp;: </span>
 			<span class=" d-block d-sm-none anchor anchor_title" data-toggle="collapse" data-target=".anchors">Garantir&nbsp;<i class="fas d-inline  fa-caret-down"></i> </span>
-			<ul class="anchors collapse color-<?= the_title(); ?>">
+			<ul class="anchors collapse color-<?php the_title(); ?>">
 				<?php
 				if (have_rows('ancre_bandeau')) : $count = 1;
 					while (have_rows('ancre_bandeau')) : the_row(); ?>
@@ -79,7 +79,7 @@ $container = get_theme_mod('understrap_container_type');
 		endif; ?>
 	</div>
 </section>
-<section class="container-fluid prefooter-infos color-<?php echo the_title(); ?>">
+<section class="container-fluid prefooter-infos prefoooter-color-<?php echo the_title(); ?>">
 	<div class="row mx-15 py-5 justify-content-between">
 		<div class="col-12 col-lg-4 my-auto text-left" id="download">
 			<a href="<?php the_field('pdf_a_telecharger_'); ?>" target="_blank"><img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-pdf.svg" alt="">
