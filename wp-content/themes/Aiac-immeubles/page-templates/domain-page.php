@@ -79,7 +79,7 @@ $container = get_theme_mod('understrap_container_type');
 		endif; ?>
 	</div>
 </section>
-<section class="container-fluid prefooter-infos <?php echo the_title(); ?>">
+<section class="container-fluid prefooter-infos color-<?php echo the_title(); ?>">
 	<div class="row mx-15 py-5 justify-content-between">
 		<div class="col-12 col-lg-4 my-auto text-left" id="download">
 			<a href="<?php the_field('pdf_a_telecharger_'); ?>" target="_blank"><img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-pdf.svg" alt="">

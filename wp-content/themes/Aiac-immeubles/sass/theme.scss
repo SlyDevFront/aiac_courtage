@@ -249,6 +249,7 @@ h6 {
 }
 
 .color-Sport {
+    background-color: #e64a47;
     .garantie_item_container {
         transition: all .3s;
         &:hover {
@@ -275,6 +276,7 @@ h6 {
 }
 
 .color-Immeubles {
+    background-color: $Immeubles;
     .garantie_item_container {
         transition: all .3s;
         &:hover {
@@ -301,6 +303,7 @@ h6 {
 }
 
 .color-Entreprises {
+    background-color: $Entreprise;
     .garantie_item_container {
         transition: all .3s;
         &:hover {
@@ -327,6 +330,7 @@ h6 {
 }
 
 .color-Construction {
+    background-color: $Construction;
     .garantie_item_container {
         transition: all .3s;
         &:hover {
@@ -353,6 +357,7 @@ h6 {
 }
 
 .color-Collectives {
+    background-color: $Collectives;
     .garantie_item_container {
         transition: all .3s;
         &:hover {
