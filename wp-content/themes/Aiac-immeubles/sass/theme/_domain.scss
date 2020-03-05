@@ -336,6 +336,9 @@
         }
     }
     .prefooter-infos {
+        p {
+            margin-bottom: 0 !important;
+        }
         margin-top: 14em;
         @media screen and (max-width: 768px) {
             margin-top: unset;
