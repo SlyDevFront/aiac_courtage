@@ -1,5 +1,5 @@
 .team_item {
-    margin: 3.5% 0;
+    margin: 5% 0;
     @media screen and (max-width: 992px) {
         margin: 5% 0 !important;
     }
@@ -37,6 +37,9 @@
 
 .team_courtage {
     //padding: 2.5% 0;
+    h2 {
+        font-size: 2.6875em;
+    }
     .border_grey,
     .border_dark_grey {
         left: 0 !important;
@@ -65,7 +68,7 @@
         width: max-content;
         position: absolute;
         top: 50%;
-        left: -35%;
+        left: -30%;
     }
 }
 
@@ -83,7 +86,7 @@
         width: max-content;
         position: absolute;
         top: 50%;
-        left: -90%;
+        left: -82%;
     }
 }
 
@@ -101,9 +104,8 @@
         transform: rotate(270deg);
         width: max-content;
         position: absolute;
-        top: 46%;
-        left: -140%;
-        font-size: 2.3em;
+        top: 45%;
+        left: -170%;
     }
 }
 
