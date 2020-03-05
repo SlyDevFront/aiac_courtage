@@ -1,8 +1,13 @@
 .page-template-standard-page {
     .header-page-standard {
         background: linear-gradient(to right, $primary_blue, #007695);
+        @media screen and (min-width: 768px) and (max-width: 768px) {
+            .header-overlay {
+                padding: 2% 0;
+            }
+        }
         @media screen and (max-width: 768px) {
-            padding-top: 105px;
+            padding-top: 170px;
             #breadcrumbs {
                 line-height: 25px !important;
             }
@@ -14,38 +19,53 @@
             .alignleft {
                 margin: 0.5em 0 !important;
             }
+            h1 {
+                margin: 1em 0;
+            }
             H3 {
                 line-height: 45px;
                 margin-bottom: 1rem !important;
-                font-size: 2.34375em !important;
+                font-size: 2em !important;
+            }
+            h4 {
+                line-height: 41px;
+                font-weight: 400;
             }
         }
         @media screen and (min-width: 768px) {
             h1 {
-                font-size: 3.4em;
-                font-weight: 200 !important;
+                font-size: 3.4375em !important;
+                font-weight: 500;
+                line-height: 60px;
+                margin: 0;
+                // padding: 4% 0 8% 0;
             }
             h2 {
-                font-size: 2.864375em !important;
-                line-height: 60px;
+                font-size: 2.8125em;
+                font-weight: 500;
+                // line-height: 40px;
                 margin: 1em 0 !important;
             }
             h3 {
+                font-size: 2.375em;
                 line-height: 60px;
             }
             h4 {
                 line-height: 41px;
+                font-weight: 400;
             }
             h5 {
                 letter-spacing: 3px !important;
                 line-height: 60px;
+                margin: 25px 0 !important;
             }
         }
         a {
             color: $primary_blue;
             text-decoration: underline;
+            transition: .2s;
             &:hover {
-                text-decoration: underline;
+                text-decoration: none;
             }
         }
         p {
