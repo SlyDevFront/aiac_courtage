@@ -42,10 +42,10 @@ $container = get_theme_mod('understrap_container_type');
 <section class="main_content container-fluid">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-5 my-auto col-lg-5 text-center" id="pic" data-aos="fade-up" data-aos-duration="1500">
+			<div class="col-12 col-md-5 my-auto col-lg-6 text-center" id="pic" data-aos="fade-up" data-aos-duration="1500">
 				<?= the_post_thumbnail(); ?>
 			</div>
-			<div class="col-12 col-md-7 col-lg-7 title text-left" data-aos="fade-up" data-aos-duration="1500">
+			<div class="col-12 col-md-7 col-lg-6 title text-left" data-aos="fade-up" data-aos-duration="1500">
 				<h2><?php the_field('titre_h2'); ?></h2>
 				<h5><?php the_field('titre_h5'); ?></h5>
 				<?php the_field('contenu_texte'); ?>
