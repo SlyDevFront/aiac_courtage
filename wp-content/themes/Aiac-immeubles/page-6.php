@@ -151,6 +151,10 @@ get_header();
 						<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-expert-secteurs.svg" alt="">
 						<span class="title">experts secteur</span>
 					</div>
+					<div class="col-12 col-md-3  text-center secteur">
+						<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-responsables-secteur.svg" alt="">
+						<span class="title">responsables de service</span>
+					</div>
 					<div class="col-12 text-center">
 						<button><a href="<?php the_field('lien_cta_equipe') ?>"><?php the_field('titre_cta_bouton_equipe') ?></a></button>
 

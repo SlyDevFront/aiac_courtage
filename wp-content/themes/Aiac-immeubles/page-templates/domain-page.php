@@ -82,8 +82,14 @@ $container = get_theme_mod('understrap_container_type');
 <section class="container-fluid prefooter-infos prefoooter-color-<?php echo the_title(); ?>">
 	<div class="row mx-15 py-5 justify-content-between">
 		<div class="col-12 col-lg-4 my-auto text-left" id="download">
-			<a href="<?php the_field('pdf_a_telecharger_'); ?>" target="_blank"><img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-pdf.svg" alt="">
-				<p><strong> Télecharger la plaquette</strong></p>
+			<a href="<?php the_field('pdf_a_telecharger_'); ?>" target="_blank">
+				<?php if (get_field('picto_bloc_pdf')) { ?>
+					<img src="<?php the_field('picto_bloc_pdf'); ?>" alt="">
+				<?php } else { ?>
+					<img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-pdf.svg" alt="">
+				<?php 	} ?>
+
+				<p><strong> <?php the_field('texte_bloc_pdf'); ?></strong></p>
 				<p><?php echo the_title(); ?></p>
 			</a>
 		</div>
@@ -126,8 +132,14 @@ $container = get_theme_mod('understrap_container_type');
 			?>
 		</div>
 		<div class="col-12 col-lg-4 text-right" id="contact_domain">
-			<a href="<?php the_permalink(16); ?>"><img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-mail.svg" alt="">
-				<p><strong>Contactez-nous</strong></p>
+			<a href="<?php the_field('mail_contact'); ?>">
+				<?php if (get_field('picto_bloc_contact')) { ?>
+					<img src="<?php the_field('picto_bloc_contact'); ?>" alt="">
+				<?php } else { ?>
+					<img src="<?php bloginfo('url') ?>/wp-content/themes/Aiac-immeubles/img/aiac-garantir-picto-mail.svg" alt="">
+				<?php 	} ?>
+
+				<p><strong><?= the_field('texte_bloc_contact'); ?></strong></p>
 				<p>Assurances &nbsp;<?php echo the_title(); ?></p>
 			</a>
 		</div>
