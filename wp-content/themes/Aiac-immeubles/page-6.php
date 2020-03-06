@@ -143,18 +143,28 @@ get_header();
 			</div>
 			<div class="col-12 team_list" data-aos="fade-up" data-aos-duration="1750">
 				<div class=" row justify-content-center">
-					<div class="col-12 col-md-3  text-center secteur">
-						<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-dirigeants.svg" alt="">
-						<span class="title">direction</span>
-					</div>
-					<div class="col-12 col-md-3  text-center secteur">
-						<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-expert-secteurs.svg" alt="">
-						<span class="title">experts secteur</span>
-					</div>
-					<div class="col-12 col-md-3  text-center secteur">
-						<img src="<?php bloginfo('url'); ?>/wp-content/themes/Aiac-immeubles/img/aiac-responsables-secteur.svg" alt="">
-						<span class="title">responsables de service</span>
-					</div>
+
+
+
+
+					<?php if (have_rows('secteurs')) : ?>
+						<?php while (have_rows('secteurs')) : the_row();
+
+							// Get sub field values.
+							$image = get_sub_field('picto_secteur');
+							$title = get_sub_field('nom_secteur');
+
+						?>
+							<div class="col-12 col-md-3  text-center secteur">
+								<img src="<?php echo $image; ?>" alt="">
+								<span class="title"><?php echo $title; ?></span>
+							</div>
+						<?php endwhile; ?>
+					<?php endif; ?>
+
+
+
+
 					<div class="col-12 text-center">
 						<button><a href="<?php the_field('lien_cta_equipe') ?>"><?php the_field('titre_cta_bouton_equipe') ?></a></button>
 
