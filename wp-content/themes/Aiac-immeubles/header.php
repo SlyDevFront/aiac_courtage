@@ -42,8 +42,7 @@ $container = get_theme_mod('understrap_container_type');
 				</div>
 				<div class="col-12 col-sm-4 text-right">
 					<p class="link">
-						<a href="http://prepaiacim.eanet.fr/" target="_blank" rel="noopener noreferrer">Immeuble /
-							Syndic</a>
+						<a href="http://prepaiacim.eanet.fr/" target="_blank" rel="noopener noreferrer">Immeuble</a>
 					</p>
 				</div>
 			</div>
@@ -52,15 +51,15 @@ $container = get_theme_mod('understrap_container_type');
 	<div class="container-fluid header">
 		<div class="mx-15">
 			<div class="row" id="header_menu">
-				<div class="col-6 col-lg-2 my-auto text-md-right text-lg-left order-2 order-lg-1" id="logo">
+				<div class="col-6 col-xxl-2 my-auto text-right text-xxl-left order-2 order-xxl-1" id="logo">
 					<?php if (has_custom_logo()) {
 						the_custom_logo();
 					} ?>
 				</div>
-				<div class="col-6 col-lg-8 text-center order-1 order-lg-2" id="menu">
+				<div class="col-6 col-xxl-8 text-center order-1 order-xxl-2" id="menu">
 					<?php wp_nav_menu(array('theme_location' => 'primary')); ?>
 				</div>
-				<div class="col-2 text-lg-right my-auto d-none d-lg-block order-md-3" id="search">
+				<div class="col-2 text-xxl-right my-auto order-xxl-3" id="search">
 
 					<ul class="icon">
 						<li><a href="#searchBar" class="" data-toggle="search-form"><i class="searchIcon fa fa-search" aria-hidden="true"></i></a></li>

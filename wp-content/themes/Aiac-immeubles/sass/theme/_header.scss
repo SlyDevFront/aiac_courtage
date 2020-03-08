@@ -250,6 +250,9 @@ body {
                 font-size: 1.1em;
                 vertical-align: middle;
             }
+            @media screen and (min-width:1260px) and (max-width:1366px) {
+                margin-right: 0;
+            }
         }
     }
 }

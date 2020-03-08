@@ -16,8 +16,10 @@
         .carousel-caption-content {
             position: absolute;
             text-align: left;
-            top: 35%;
-            left: 10%;
+            top: 50%;
+            left: 50%;
+            width: 80%;
+            transform: translate(-50%, -50%);
             h2 {
                 font-family: $main_font;
                 font-size: 3.4em;

@@ -21,7 +21,7 @@ get_header();
 	<div class="mx-15">
 		<div class="container ">
 			<div class="row">
-				<div class="col-12 col-md-8 col-lg-9" id="titre">
+				<div class="col-12 col-md-8 col-lg-8 col-xl-9" id="titre">
 					<?php
 					$args = array(
 						'post_type' => 'garanties',
@@ -52,7 +52,7 @@ get_header();
 					</h1>
 				</div>
 
-				<div class="col-12 col-md-4 col-lg-3 my-auto" id="contact">
+				<div class="col-12 col-md-4 col-lg-4 col-xl-3 my-auto" id="contact">
 					<button><a href="<?php the_field('lien_bouton_contact'); ?>">Contactez-nous</a></button>
 				</div>
 			</div>
@@ -138,33 +138,22 @@ get_header();
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center my-auto" id="intro" data-aos="fade-up" data-aos-duration="1000">
-				<h3>Notre équipe&nbsp;<span><?php the_field('intitule_section'); ?></span></h3>
+				<h3>Notre&nbsp;<span><?php the_field('intitule_section'); ?></span></h3>
 				<h5><?php the_field('titre_h5_experts'); ?></h5>
 			</div>
 			<div class="col-12 team_list" data-aos="fade-up" data-aos-duration="1750">
 				<div class=" row justify-content-center">
-
-
-
-
 					<?php if (have_rows('secteurs')) : ?>
 						<?php while (have_rows('secteurs')) : the_row();
-
-							// Get sub field values.
 							$image = get_sub_field('picto_secteur');
 							$title = get_sub_field('nom_secteur');
-
 						?>
-							<div class="col-12 col-md-3  text-center secteur">
+							<div class="col-12 col-md-4  text-center secteur">
 								<img src="<?php echo $image; ?>" alt="">
 								<span class="title"><?php echo $title; ?></span>
 							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>
-
-
-
-
 					<div class="col-12 text-center">
 						<button><a href="<?php the_field('lien_cta_equipe') ?>"><?php the_field('titre_cta_bouton_equipe') ?></a></button>
 

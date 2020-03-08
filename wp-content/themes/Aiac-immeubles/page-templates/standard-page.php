@@ -17,6 +17,7 @@ $container = get_theme_mod('understrap_container_type');
 <section class="standard-page container-fluid">
 	<div class="container">
 		<div class="content-standard">
+			<h1><?php the_title(); ?></h1>
 			<?= the_content($post->ID); ?>
 		</div>
 	</div>

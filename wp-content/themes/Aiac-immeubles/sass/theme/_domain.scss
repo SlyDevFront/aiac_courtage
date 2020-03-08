@@ -129,13 +129,13 @@
                     display: block;
                     margin: 2vw 0 !important;
                 }
-                @media screen and (min-width: 768px) and (max-width: 1199px) {
+                @media screen and (min-width: 768px) and (max-width: 1440px) {
                     margin: 1.6vw;
                     display: inline-block;
                 }
                 .li_container {
                     display: inline;
-                    @media screen and (min-width: 768px) and (max-width: 1199px) {
+                    @media screen and (min-width: 768px) and (max-width: 1440px) {
                         display: inline-block;
                     }
                     @media screen and (max-width: 767px) {
@@ -145,7 +145,7 @@
                     .anchor_icon {
                         margin-right: 1%;
                         vertical-align: middle;
-                        @media screen and (min-width: 768px) and (max-width: 1199px) {
+                        @media screen and (min-width: 768px) and (max-width: 1440px) {
                             height: 2em;
                             display: block;
                             margin: auto;
@@ -185,6 +185,9 @@
             @media screen and (max-width: 767px) {
                 width: 100% !important;
                 font-size: 1.041875em !important;
+            }
+            @media screen and (min-width:1024px) and (max-width: 1600px) {
+                font-size: 0.975em !important;
             }
             @media screen and (min-width: 768px) and (max-width: 1024px) {
                 font-size: 0.75em !important;

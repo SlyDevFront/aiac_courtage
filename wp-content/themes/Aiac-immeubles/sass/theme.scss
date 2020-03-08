@@ -33,6 +33,12 @@ ul:not(.mega-menu) {
     vertical-align: middle;
 }
 
+.site-footer {
+    .my-auto {
+        height: auto !important;
+    }
+}
+
 .sticky {
     position: fixed;
     top: 0;
@@ -60,6 +66,15 @@ strong {
     }
 }
 
+@media screen and (max-width: 1259px) {
+    .header {
+        .mx-15 {
+            width: 90% !important;
+            margin-left: 5% !important;
+        }
+    }
+}
+
 button {
     letter-spacing: 2px !important;
     font-weight: 200 !important;
@@ -70,14 +85,6 @@ button {
         vertical-align: middle;
         line-height: 30px;
     }
-    // &:hover {
-    //     transform: translateY(-0.2rem);
-    //     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-    // }
-    // &:active {
-    //     transform: translateX(-1px);
-    //     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    // }
 }
 
 .cover {

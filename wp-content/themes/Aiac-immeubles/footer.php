@@ -24,7 +24,7 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="row ">
 						<div class="col-12 order-3 order-md-1 col-md-3 my-auto">
 							<p class="copyright">
-								© aiac&nbsp;&nbsp;&nbsp;&nbsp; <a id="recla_footer" href="<?php the_permalink(367); ?>">Réclamation</a>
+								© aiac&nbsp;&nbsp;&nbsp;&nbsp; <a id="recla_footer" href="<?php the_permalink(367); ?>">Réclamations</a>
 							</p>
 						</div>
 						<div class="col-6 order-1 order-md-2 col-md-6 my-auto text-md-center">
@@ -32,8 +32,8 @@ $container = get_theme_mod('understrap_container_type');
 						</div>
 						<div class="col-6 order-2 order-md-3 col-md-3 my-auto text-right icons">
 							<ul class="icon">
-								<li><a href="#"><i class="fas fa-envelope"></i></a></li>
-								<li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+								<li><a href="<?php the_permalink(16); ?>"><i class="fas fa-envelope"></i></a></li>
+								<li><a href="https://www.linkedin.com/company/aiac" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -52,8 +52,8 @@ $container = get_theme_mod('understrap_container_type');
 			<div class="col-md-12">
 				<div class="col-12 col-md-12 my-auto text-center justify-content-center">
 					<ul>
-						<li><a href="#">Mentions légales</a></li>
-						<li><a href="#">Politique de confidentialité</a></li>
+						<li><a href="<?php the_permalink(611); ?>">Mentions légales</a></li>
+						<li><a href="<?php the_permalink(3); ?>">Politique de confidentialité</a></li>
 						<li><a href="https://www.eanet.fr" target="_blank">Création: EANET</a></li>
 					</ul>
 				</div>

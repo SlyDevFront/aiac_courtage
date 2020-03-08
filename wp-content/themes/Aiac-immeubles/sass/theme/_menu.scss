@@ -1,19 +1,15 @@
         #menu {
-            @media screen and (min-width: 1024px) and (max-width: 1600px) {
+            @media screen and (min-width: 1259px) and (max-width: 1600px) {
                 a.mega-menu-link {
                     padding: 0 1.4em !important;
                 }
             }
-            @media screen and (min-width: 1024px) and (max-width: 1024px) {
-                a.mega-menu-link {
-                    padding: 0 20px !important;
-                    font-size: 1em !important;
-                }
+            @media screen and (min-width: 1024px) and (max-width: 1259px) {
                 ul.mega-sub-menu {
                     width: 100% !important;
                 }
             }
-            @media screen and (max-width: 768px) {
+            @media screen and (max-width: 1259px) {
                 padding: 0;
                 .mega-menu-link {
                     font-size: 1.1em !important;
@@ -22,7 +18,7 @@
                     color: #ffffff !important;
                 }
             }
-            @media screen and (min-width:1024px) {
+            @media screen and (min-width:1367px) {
                 #mega-menu-21-0-1 {
                     position: relative;
                     height: 355px !important;
@@ -139,26 +135,50 @@
             }
         }
 
+        @media screen and (max-width: 1259px) {
+            #header_menu {
+                #search {
+                    display: none !important;
+                }
+            }
+        }
+
         .mega-menu-toggle {
             //background: rgb(62, 68, 78) !important;
         }
 
         .logo_mobile {
-            background-image: url(../img/aiac-courtage-logo.png) !important;
-            height: 78px !important;
+            background-image: url(../img/logo-aiac.jpg) !important;
+            height: 70px !important;
             width: 100%;
             background-position: top 0 left 10px !important;
             background-size: contain !important;
             background-repeat: no-repeat !important;
         }
 
-        @media screen and (min-width:768px) and (max-width:992px) {
+        @media screen and (min-width:1259px) {
             #mega-menu-item-376 {
                 display: none !important;
             }
         }
 
-        @media screen and (max-width:992px) {
+        @media screen and (max-width:1024px) {
+            #mega-menu-wrap-primary .mega-menu-toggle+#mega-menu-primary {
+                padding: 3% !important;
+            }
+            .mega-acces_client {
+                width: 60% !important;
+                margin: 5% 0 !important;
+            }
+        }
+
+        @media screen and (min-width:1260px) and (max-width:1366px) {
+            #mega-menu-wrap-primary #mega-menu-primary>li.mega-menu-item>a.mega-menu-link {
+                font-size: 1.1em !important;
+            }
+        }
+
+        @media screen and (max-width:1259px) {
             .mega-menu-link {
                 padding-left: 0 !important;
                 background: none !important;
@@ -170,7 +190,7 @@
                 }
             }
             #mega-menu-wrap-primary .mega-menu-toggle+#mega-menu-primary {
-                padding: 3% !important;
+                padding: 2% !important;
             }
             #mega-menu-item-377 {
                 margin-bottom: 35px !important;
@@ -182,7 +202,7 @@
                 }
             }
             .mega-acces_client {
-                width: 60% !important;
+                //width: 100% !important;
                 margin: 5% 0 !important;
             }
             .mega-toggle-on {
